@@ -13,11 +13,12 @@ class CourseApp:
 
         self.style = ttk.Style()
         self.current_theme = "light"
-        self.configure_theme()
 
+        # Main frame
         self.frame = tk.Frame(self.root, padx=10, pady=10)
         self.frame.pack(fill="both", expand=True)
 
+        # Dashboard frame
         self.dashboard_frame = tk.Frame(self.frame, borderwidth=2, relief="groove")
         self.dashboard_frame.grid(row=0, column=0, columnspan=2, pady=5, sticky="ew")
 
@@ -30,6 +31,7 @@ class CourseApp:
         self.progress_label = tk.Label(self.dashboard_frame, text="Avg Progress: 0%")
         self.progress_label.pack(side=tk.LEFT, padx=5)
 
+        # Search frame
         self.search_frame = tk.Frame(self.frame)
         self.search_frame.grid(row=1, column=0, columnspan=2, pady=5, sticky="ew")
 
@@ -38,6 +40,7 @@ class CourseApp:
         self.search_entry.pack(side=tk.LEFT, padx=5)
         self.search_entry.bind("<KeyRelease>", self.filter_courses)
 
+        # Course list (Treeview)
         self.tree = ttk.Treeview(self.frame, columns=("title", "platform", "status", "progress", "notes"), show="headings", height=20)
         self.tree.grid(row=2, column=0, sticky="nsew")
 
@@ -53,10 +56,12 @@ class CourseApp:
         self.tree.column("progress", width=100)
         self.tree.column("notes", width=150)
 
+        # Scrollbar
         scrollbar = ttk.Scrollbar(self.frame, orient="vertical", command=self.tree.yview)
         scrollbar.grid(row=2, column=1, sticky="ns")
         self.tree.configure(yscrollcommand=scrollbar.set)
 
+        # Buttons frame
         self.button_frame = tk.Frame(self.frame)
         self.button_frame.grid(row=3, column=0, columnspan=2, pady=5, sticky="ew")
 
@@ -87,8 +92,12 @@ class CourseApp:
         self.theme_button = ttk.Button(self.button_frame, text="Toggle Theme", command=self.toggle_theme)
         self.theme_button.pack(side=tk.LEFT, padx=5)
 
+        # Configure grid weights
         self.frame.grid_rowconfigure(2, weight=1)
         self.frame.grid_columnconfigure(0, weight=1)
+
+        # Apply theme after all widgets are created
+        self.configure_theme()
 
         self.update_dashboard()
         self.load_courses()
@@ -104,7 +113,7 @@ class CourseApp:
             self.total_label.configure(bg="#e0e0e0", fg="black")
             self.completed_label.configure(bg="#e0e0e0", fg="black")
             self.progress_label.configure(bg="#e0e0e0", fg="black")
-        else:
+        else:  # dark
             self.style.theme_use("clam")
             self.root.configure(bg="#2d2d2d")
             self.frame.configure(bg="#2d2d2d")
@@ -134,7 +143,7 @@ class CourseApp:
     def load_courses(self, filter_text=""):
         for item in self.tree.get_children():
             self.tree.delete(item)
-        self.courses_cache = list(self.db.get_all_courses())  # Refresh cache
+        self.courses_cache = list(self.db.get_all_courses())
         for course in self.courses_cache:
             notes_preview = course[5][:20] + "..." if course[5] and len(course[5]) > 20 else course[5]
             display_text = f"{course[1]} - {course[2]} ({course[3]}, {course[4]}%) | Notes: {notes_preview}"
@@ -317,7 +326,7 @@ class CourseApp:
             self.db.close()
             self.db = Database()
             self.db.import_from_csv(filename)
-            self.courses_cache = list(self.db.get_all_courses())  # Update cache
+            self.courses_cache = list(self.db.get_all_courses())
             self.load_courses(self.search_entry.get())
             messagebox.showinfo("Success", f"Courses imported from {filename}")
 
@@ -325,7 +334,7 @@ class CourseApp:
         self.db.close()
         self.db = Database()
         self.db.import_from_csv()
-        self.courses_cache = list(self.db.get_all_courses())  # Update cache
+        self.courses_cache = list(self.db.get_all_courses())
         self.load_courses(self.search_entry.get())
         messagebox.showinfo("Reload", "App reloaded successfully")
 
