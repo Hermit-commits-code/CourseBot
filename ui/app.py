@@ -12,6 +12,15 @@ class CourseApp:
         self.frame = tk.Frame(self.root, padx=10, pady=10)
         self.frame.pack()
 
+        # Search frame
+        self.search_frame = tk.Frame(self.frame)
+        self.search_frame.pack(pady=5)
+
+        tk.Label(self.search_frame, text="Search:").pack(side=tk.LEFT)
+        self.search_entry = tk.Entry(self.search_frame, width=40)
+        self.search_entry.pack(side=tk.LEFT, padx=5)
+        self.search_entry.bind("<KeyRelease>", self.filter_courses)  # Filter on typing
+
         # Course list
         self.course_list = tk.Listbox(self.frame, width=50, height=20)
         self.course_list.pack()
@@ -20,33 +29,34 @@ class CourseApp:
         self.button_frame = tk.Frame(self.frame)
         self.button_frame.pack(pady=5)
 
-        # Add course button
         self.add_button = tk.Button(self.button_frame, text="Add Course", command=self.add_course_dialog)
         self.add_button.pack(side=tk.LEFT, padx=5)
 
-        # Edit course button
         self.edit_button = tk.Button(self.button_frame, text="Edit Course", command=self.edit_course_dialog)
         self.edit_button.pack(side=tk.LEFT, padx=5)
 
-        # Delete course button
         self.delete_button = tk.Button(self.button_frame, text="Delete Course", command=self.delete_course)
         self.delete_button.pack(side=tk.LEFT, padx=5)
 
-        # Set progress button
         self.progress_button = tk.Button(self.button_frame, text="Set Progress", command=self.set_progress_dialog)
         self.progress_button.pack(side=tk.LEFT, padx=5)
 
-        # Reload button
         self.reload_button = tk.Button(self.button_frame, text="Reload", command=self.reload_app)
         self.reload_button.pack(side=tk.LEFT, padx=5)
 
         self.load_courses()
 
-    def load_courses(self):
+    def load_courses(self, filter_text=""):
         self.course_list.delete(0, tk.END)
         courses = self.db.get_all_courses()
         for course in courses:
-            self.course_list.insert(tk.END, f"{course[1]} - {course[2]} ({course[3]}, {course[4]}%)")
+            display_text = f"{course[1]} - {course[2]} ({course[3]}, {course[4]}%)"
+            if filter_text.lower() in display_text.lower():
+                self.course_list.insert(tk.END, display_text)
+
+    def filter_courses(self, event):
+        filter_text = self.search_entry.get()
+        self.load_courses(filter_text)
 
     def add_course_dialog(self):
         dialog = tk.Toplevel(self.root)
@@ -67,7 +77,7 @@ class CourseApp:
             platform = platform_entry.get().strip()
             if title and platform:
                 self.db.add_course(title, platform)
-                self.load_courses()
+                self.load_courses(self.search_entry.get())  # Respect current filter
                 dialog.destroy()
                 messagebox.showinfo("Success", f"Added '{title}' from {platform}")
             else:
@@ -102,7 +112,7 @@ class CourseApp:
             platform = platform_entry.get().strip()
             if title and platform:
                 self.db.update_course(course_id, title=title, platform=platform)
-                self.load_courses()
+                self.load_courses(self.search_entry.get())  # Respect current filter
                 dialog.destroy()
                 messagebox.showinfo("Success", f"Updated course ID {course_id}")
             else:
@@ -119,7 +129,7 @@ class CourseApp:
         course_id = int(self.db.get_all_courses()[selected[0]][0])
         if messagebox.askyesno("Confirm Delete", "Are you sure you want to delete this course?"):
             self.db.delete_course(course_id)
-            self.load_courses()
+            self.load_courses(self.search_entry.get())  # Respect current filter
             messagebox.showinfo("Success", f"Deleted course ID {course_id}")
 
     def set_progress_dialog(self):
@@ -147,10 +157,9 @@ class CourseApp:
                 progress = int(progress_entry.get().strip())
                 if 0 <= progress <= 100:
                     self.db.update_course(course_id, progress=progress)
-                    # Update status based on progress
                     status = "Completed" if progress == 100 else "In Progress" if progress > 0 else "Not Started"
                     self.db.update_course(course_id, status=status)
-                    self.load_courses()
+                    self.load_courses(self.search_entry.get())  # Respect current filter
                     dialog.destroy()
                     messagebox.showinfo("Success", f"Progress set to {progress}% for {course_title}")
                 else:
@@ -163,7 +172,7 @@ class CourseApp:
     def reload_app(self):
         self.db.close()
         self.db = Database()
-        self.load_courses()
+        self.load_courses(self.search_entry.get())  # Respect current filter
         messagebox.showinfo("Reload", "App reloaded successfully")
 
     def run(self):
