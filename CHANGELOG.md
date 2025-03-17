@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/Hermit-commits-code/CourseBot/compare/v1.1.0...v1.2.0) (2025-03-17)
+
+
+### Features
+
+* add database setup and operations ([f45c06d](https://github.com/Hermit-commits-code/CourseBot/commit/f45c06d474f19d4013bfdfee0928fcb47abdfa06))
+
 ## [1.1.0](https://github.com/Hermit-commits-code/CourseBot/compare/v1.0.0...v1.1.0) (2025-03-17)
 
 
