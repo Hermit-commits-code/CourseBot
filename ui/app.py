@@ -19,10 +19,10 @@ class CourseApp:
         tk.Label(self.search_frame, text="Search:").pack(side=tk.LEFT)
         self.search_entry = tk.Entry(self.search_frame, width=40)
         self.search_entry.pack(side=tk.LEFT, padx=5)
-        self.search_entry.bind("<KeyRelease>", self.filter_courses)  # Filter on typing
+        self.search_entry.bind("<KeyRelease>", self.filter_courses)
 
         # Course list
-        self.course_list = tk.Listbox(self.frame, width=50, height=20)
+        self.course_list = tk.Listbox(self.frame, width=60, height=20)  # Widened for notes preview
         self.course_list.pack()
 
         # Buttons frame
@@ -41,6 +41,9 @@ class CourseApp:
         self.progress_button = tk.Button(self.button_frame, text="Set Progress", command=self.set_progress_dialog)
         self.progress_button.pack(side=tk.LEFT, padx=5)
 
+        self.notes_button = tk.Button(self.button_frame, text="Notes", command=self.notes_dialog)
+        self.notes_button.pack(side=tk.LEFT, padx=5)
+
         self.reload_button = tk.Button(self.button_frame, text="Reload", command=self.reload_app)
         self.reload_button.pack(side=tk.LEFT, padx=5)
 
@@ -50,7 +53,8 @@ class CourseApp:
         self.course_list.delete(0, tk.END)
         courses = self.db.get_all_courses()
         for course in courses:
-            display_text = f"{course[1]} - {course[2]} ({course[3]}, {course[4]}%)"
+            notes_preview = course[5][:20] + "..." if course[5] and len(course[5]) > 20 else course[5]
+            display_text = f"{course[1]} - {course[2]} ({course[3]}, {course[4]}%) | Notes: {notes_preview}"
             if filter_text.lower() in display_text.lower():
                 self.course_list.insert(tk.END, display_text)
 
@@ -61,7 +65,7 @@ class CourseApp:
     def add_course_dialog(self):
         dialog = tk.Toplevel(self.root)
         dialog.title("Add New Course")
-        dialog.geometry("300x150")
+        dialog.geometry("300x200")
         dialog.grab_set()
 
         tk.Label(dialog, text="Course Title:").pack(pady=5)
@@ -72,16 +76,21 @@ class CourseApp:
         platform_entry = tk.Entry(dialog, width=30)
         platform_entry.pack()
 
+        tk.Label(dialog, text="Notes:").pack(pady=5)
+        notes_entry = tk.Entry(dialog, width=30)
+        notes_entry.pack()
+
         def submit():
             title = title_entry.get().strip()
             platform = platform_entry.get().strip()
+            notes = notes_entry.get().strip()
             if title and platform:
-                self.db.add_course(title, platform)
-                self.load_courses(self.search_entry.get())  # Respect current filter
+                self.db.add_course(title, platform, notes)
+                self.load_courses(self.search_entry.get())
                 dialog.destroy()
                 messagebox.showinfo("Success", f"Added '{title}' from {platform}")
             else:
-                messagebox.showwarning("Input Error", "Please fill in both fields")
+                messagebox.showwarning("Input Error", "Please fill in title and platform")
 
         tk.Button(dialog, text="Submit", command=submit).pack(pady=10)
 
@@ -112,7 +121,7 @@ class CourseApp:
             platform = platform_entry.get().strip()
             if title and platform:
                 self.db.update_course(course_id, title=title, platform=platform)
-                self.load_courses(self.search_entry.get())  # Respect current filter
+                self.load_courses(self.search_entry.get())
                 dialog.destroy()
                 messagebox.showinfo("Success", f"Updated course ID {course_id}")
             else:
@@ -129,7 +138,7 @@ class CourseApp:
         course_id = int(self.db.get_all_courses()[selected[0]][0])
         if messagebox.askyesno("Confirm Delete", "Are you sure you want to delete this course?"):
             self.db.delete_course(course_id)
-            self.load_courses(self.search_entry.get())  # Respect current filter
+            self.load_courses(self.search_entry.get())
             messagebox.showinfo("Success", f"Deleted course ID {course_id}")
 
     def set_progress_dialog(self):
@@ -159,7 +168,7 @@ class CourseApp:
                     self.db.update_course(course_id, progress=progress)
                     status = "Completed" if progress == 100 else "In Progress" if progress > 0 else "Not Started"
                     self.db.update_course(course_id, status=status)
-                    self.load_courses(self.search_entry.get())  # Respect current filter
+                    self.load_courses(self.search_entry.get())
                     dialog.destroy()
                     messagebox.showinfo("Success", f"Progress set to {progress}% for {course_title}")
                 else:
@@ -169,10 +178,39 @@ class CourseApp:
 
         tk.Button(dialog, text="Submit", command=submit).pack(pady=10)
 
+    def notes_dialog(self):
+        selected = self.course_list.curselection()
+        if not selected:
+            messagebox.showwarning("Selection Error", "Please select a course to add notes")
+            return
+
+        course_id = int(self.db.get_all_courses()[selected[0]][0])
+        course_title = self.db.get_all_courses()[selected[0]][1]
+        current_notes = self.db.get_all_courses()[selected[0]][5]
+
+        dialog = tk.Toplevel(self.root)
+        dialog.title(f"Notes for {course_title}")
+        dialog.geometry("400x200")
+        dialog.grab_set()
+
+        tk.Label(dialog, text="Notes:").pack(pady=5)
+        notes_text = tk.Text(dialog, width=40, height=10)
+        notes_text.pack()
+        notes_text.insert(tk.END, current_notes)
+
+        def submit():
+            notes = notes_text.get("1.0", tk.END).strip()
+            self.db.update_course(course_id, notes=notes)
+            self.load_courses(self.search_entry.get())
+            dialog.destroy()
+            messagebox.showinfo("Success", f"Notes updated for {course_title}")
+
+        tk.Button(dialog, text="Submit", command=submit).pack(pady=10)
+
     def reload_app(self):
         self.db.close()
         self.db = Database()
-        self.load_courses(self.search_entry.get())  # Respect current filter
+        self.load_courses(self.search_entry.get())
         messagebox.showinfo("Reload", "App reloaded successfully")
 
     def run(self):

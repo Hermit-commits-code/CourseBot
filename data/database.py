@@ -13,21 +13,21 @@ class Database:
                 title TEXT NOT NULL,
                 platform TEXT,
                 status TEXT DEFAULT 'Not Started',
-                progress INTEGER DEFAULT 0
+                progress INTEGER DEFAULT 0,
+                notes TEXT DEFAULT ''
             )
         ''')
         self.conn.commit()
 
-    def add_course(self, title, platform):
-        self.cursor.execute("INSERT INTO courses (title, platform) VALUES (?, ?)", (title, platform))
+    def add_course(self, title, platform, notes=""):
+        self.cursor.execute("INSERT INTO courses (title, platform, notes) VALUES (?, ?, ?)", (title, platform, notes))
         self.conn.commit()
 
     def get_all_courses(self):
         self.cursor.execute("SELECT * FROM courses")
         return self.cursor.fetchall()
 
-    def update_course(self, course_id, title=None, platform=None, status=None, progress=None):
-        # Only update fields that are provided
+    def update_course(self, course_id, title=None, platform=None, status=None, progress=None, notes=None):
         updates = []
         params = []
         if title is not None:
@@ -42,6 +42,9 @@ class Database:
         if progress is not None:
             updates.append("progress = ?")
             params.append(progress)
+        if notes is not None:
+            updates.append("notes = ?")
+            params.append(notes)
         if updates:
             params.append(course_id)
             query = f"UPDATE courses SET {', '.join(updates)} WHERE id = ?"
@@ -57,10 +60,8 @@ class Database:
 
 if __name__ == "__main__":
     db = Database()
-    db.add_course("Test Course", "Udemy")
+    db.add_course("Test Course", "Udemy", "Great intro to Python")
     print(db.get_all_courses())
-    db.update_course(1, title="Updated Course")
-    print(db.get_all_courses())
-    db.delete_course(1)
+    db.update_course(1, notes="Updated notes")
     print(db.get_all_courses())
     db.close()
