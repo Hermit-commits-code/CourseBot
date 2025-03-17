@@ -1,5 +1,5 @@
 import tkinter as tk
-from tkinter import simpledialog, messagebox
+from tkinter import simpledialog, messagebox, filedialog
 from data.database import Database
 
 class CourseApp:
@@ -7,6 +7,7 @@ class CourseApp:
         self.root = root
         self.root.title("Course Tracker")
         self.db = Database()
+        self.db.import_from_csv()  # Load existing data on startup
 
         # Main frame
         self.frame = tk.Frame(self.root, padx=10, pady=10)
@@ -22,7 +23,7 @@ class CourseApp:
         self.search_entry.bind("<KeyRelease>", self.filter_courses)
 
         # Course list
-        self.course_list = tk.Listbox(self.frame, width=60, height=20)  # Widened for notes preview
+        self.course_list = tk.Listbox(self.frame, width=60, height=20)
         self.course_list.pack()
 
         # Buttons frame
@@ -43,6 +44,12 @@ class CourseApp:
 
         self.notes_button = tk.Button(self.button_frame, text="Notes", command=self.notes_dialog)
         self.notes_button.pack(side=tk.LEFT, padx=5)
+
+        self.export_button = tk.Button(self.button_frame, text="Export", command=self.export_to_csv)
+        self.export_button.pack(side=tk.LEFT, padx=5)
+
+        self.import_button = tk.Button(self.button_frame, text="Import", command=self.import_from_csv)
+        self.import_button.pack(side=tk.LEFT, padx=5)
 
         self.reload_button = tk.Button(self.button_frame, text="Reload", command=self.reload_app)
         self.reload_button.pack(side=tk.LEFT, padx=5)
@@ -207,9 +214,32 @@ class CourseApp:
 
         tk.Button(dialog, text="Submit", command=submit).pack(pady=10)
 
+    def export_to_csv(self):
+        filename = filedialog.asksaveasfilename(
+            defaultextension=".csv",
+            filetypes=[("CSV files", "*.csv")],
+            title="Save Courses As"
+        )
+        if filename:
+            self.db.export_to_csv(filename)
+            messagebox.showinfo("Success", f"Courses exported to {filename}")
+
+    def import_from_csv(self):
+        filename = filedialog.askopenfilename(
+            filetypes=[("CSV files", "*.csv")],
+            title="Import Courses From"
+        )
+        if filename:
+            self.db.close()
+            self.db = Database()
+            self.db.import_from_csv(filename)
+            self.load_courses(self.search_entry.get())
+            messagebox.showinfo("Success", f"Courses imported from {filename}")
+
     def reload_app(self):
         self.db.close()
         self.db = Database()
+        self.db.import_from_csv()  # Load default file if exists
         self.load_courses(self.search_entry.get())
         messagebox.showinfo("Reload", "App reloaded successfully")
 
