@@ -13,6 +13,19 @@ class CourseApp:
         self.frame = tk.Frame(self.root, padx=10, pady=10)
         self.frame.pack()
 
+        # Dashboard frame
+        self.dashboard_frame = tk.Frame(self.frame, borderwidth=2, relief="groove")
+        self.dashboard_frame.pack(pady=5, fill="x")
+
+        self.total_label = tk.Label(self.dashboard_frame, text="Total Courses: 0")
+        self.total_label.pack(side=tk.LEFT, padx=5)
+
+        self.completed_label = tk.Label(self.dashboard_frame, text="Completed: 0")
+        self.completed_label.pack(side=tk.LEFT, padx=5)
+
+        self.progress_label = tk.Label(self.dashboard_frame, text="Avg Progress: 0%")
+        self.progress_label.pack(side=tk.LEFT, padx=5)
+
         # Search frame
         self.search_frame = tk.Frame(self.frame)
         self.search_frame.pack(pady=5)
@@ -54,7 +67,18 @@ class CourseApp:
         self.reload_button = tk.Button(self.button_frame, text="Reload", command=self.reload_app)
         self.reload_button.pack(side=tk.LEFT, padx=5)
 
+        self.update_dashboard()  # Initial dashboard update
         self.load_courses()
+
+    def update_dashboard(self):
+        courses = self.db.get_all_courses()
+        total = len(courses)
+        completed = sum(1 for course in courses if course[3] == "Completed")
+        avg_progress = sum(course[4] for course in courses) / total if total > 0 else 0
+
+        self.total_label.config(text=f"Total Courses: {total}")
+        self.completed_label.config(text=f"Completed: {completed}")
+        self.progress_label.config(text=f"Avg Progress: {avg_progress:.1f}%")
 
     def load_courses(self, filter_text=""):
         self.course_list.delete(0, tk.END)
@@ -64,6 +88,7 @@ class CourseApp:
             display_text = f"{course[1]} - {course[2]} ({course[3]}, {course[4]}%) | Notes: {notes_preview}"
             if filter_text.lower() in display_text.lower():
                 self.course_list.insert(tk.END, display_text)
+        self.update_dashboard()  # Update dashboard after loading courses
 
     def filter_courses(self, event):
         filter_text = self.search_entry.get()
