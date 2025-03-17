@@ -8,7 +8,10 @@ class CourseApp:
         self.root = root
         self.root.title("Course Tracker")
         self.db = Database()
-        self.db.import_from_csv()
+        try:
+            self.db.import_from_csv()
+        except ValueError as e:
+            messagebox.showerror("Startup Error", str(e))
         self.courses_cache = list(self.db.get_all_courses())
 
         self.style = ttk.Style()
@@ -123,29 +126,33 @@ class CourseApp:
         self.load_courses()
 
     def update_dashboard(self):
-        total = len(self.courses_cache)
-        completed = sum(1 for course in self.courses_cache if course[3] == "Completed")
-        avg_progress = sum(course[4] for course in self.courses_cache) / total if total > 0 else 0
-
-        self.total_label.config(text=f"Total Courses: {total}")
-        self.completed_label.config(text=f"Completed: {completed}")
-        self.progress_label.config(text=f"Avg Progress: {avg_progress:.1f}%")
+        try:
+            total = len(self.courses_cache)
+            completed = sum(1 for course in self.courses_cache if course[3] == "Completed")
+            avg_progress = sum(course[4] for course in self.courses_cache) / total if total > 0 else 0
+            self.total_label.config(text=f"Total Courses: {total}")
+            self.completed_label.config(text=f"Completed: {completed}")
+            self.progress_label.config(text=f"Avg Progress: {avg_progress:.1f}%")
+        except Exception as e:
+            messagebox.showerror("Error", f"Failed to update dashboard: {e}")
 
     def load_courses(self, filter_text=""):
-        for item in self.tree.get_children():
-            self.tree.delete(item)
-        self.courses_cache = list(self.db.get_all_courses())
-        for course in self.courses_cache:
-            notes_preview = course[5][:20] + "..." if course[5] and len(course[5]) > 20 else course[5]
-            display_text = f"{course[1]} - {course[2]} ({course[3]}, {course[4]}%) | Notes: {notes_preview}"
-            if filter_text.lower() in display_text.lower():
-                progress_text = f"{course[4]}%"  # Text instead of progress bar
-                self.tree.insert("", "end", values=(course[1], course[2], course[3], progress_text, notes_preview), tags=(course[0],))
-        self.update_dashboard()
+        try:
+            for item in self.tree.get_children():
+                self.tree.delete(item)
+            self.courses_cache = list(self.db.get_all_courses())
+            for course in self.courses_cache:
+                notes_preview = course[5][:20] + "..." if course[5] and len(course[5]) > 20 else course[5]
+                display_text = f"{course[1]} - {course[2]} ({course[3]}, {course[4]}%) | Notes: {notes_preview}"
+                if filter_text.lower() in display_text.lower():
+                    progress_text = f"{course[4]}%"
+                    self.tree.insert("", "end", values=(course[1], course[2], course[3], progress_text, notes_preview), tags=(course[0],))
+            self.update_dashboard()
+        except ValueError as e:
+            messagebox.showerror("Error", str(e))
 
     def filter_courses(self, event):
-        filter_text = self.search_entry.get()
-        self.load_courses(filter_text)
+        self.load_courses(self.search_entry.get())
 
     def add_course_dialog(self):
         dialog = tk.Toplevel(self.root)
@@ -170,13 +177,16 @@ class CourseApp:
             title = title_entry.get().strip()
             platform = platform_entry.get().strip()
             notes = notes_entry.get().strip()
-            if title and platform:
+            if not title or not platform:
+                messagebox.showwarning("Input Error", "Title and platform are required")
+                return
+            try:
                 self.db.add_course(title, platform, notes)
                 self.load_courses(self.search_entry.get())
                 dialog.destroy()
                 messagebox.showinfo("Success", f"Added '{title}' from {platform}")
-            else:
-                messagebox.showwarning("Input Error", "Please fill in title and platform")
+            except ValueError as e:
+                messagebox.showerror("Error", str(e))
 
         ttk.Button(dialog, text="Submit", command=submit).pack(pady=10)
 
@@ -187,36 +197,45 @@ class CourseApp:
             return
 
         course_id = int(self.tree.item(selected[0], "tags")[0])
-        course = self.db.get_course_by_id(course_id)
+        try:
+            course = self.db.get_course_by_id(course_id)
+            if not course:
+                messagebox.showerror("Error", f"Course ID {course_id} not found")
+                return
 
-        dialog = tk.Toplevel(self.root)
-        dialog.title("Edit Course")
-        dialog.geometry("300x150")
-        dialog.grab_set()
-        dialog.configure(bg="#f0f0f0" if self.current_theme == "light" else "#2d2d2d")
+            dialog = tk.Toplevel(self.root)
+            dialog.title("Edit Course")
+            dialog.geometry("300x150")
+            dialog.grab_set()
+            dialog.configure(bg="#f0f0f0" if self.current_theme == "light" else "#2d2d2d")
 
-        tk.Label(dialog, text="Course Title:", bg=dialog.cget("bg"), fg="black" if self.current_theme == "light" else "white").pack(pady=5)
-        title_entry = tk.Entry(dialog, width=30)
-        title_entry.pack()
-        title_entry.insert(0, course[1])
+            tk.Label(dialog, text="Course Title:", bg=dialog.cget("bg"), fg="black" if self.current_theme == "light" else "white").pack(pady=5)
+            title_entry = tk.Entry(dialog, width=30)
+            title_entry.pack()
+            title_entry.insert(0, course[1])
 
-        tk.Label(dialog, text="Platform:", bg=dialog.cget("bg"), fg="black" if self.current_theme == "light" else "white").pack(pady=5)
-        platform_entry = tk.Entry(dialog, width=30)
-        platform_entry.pack()
-        platform_entry.insert(0, course[2])
+            tk.Label(dialog, text="Platform:", bg=dialog.cget("bg"), fg="black" if self.current_theme == "light" else "white").pack(pady=5)
+            platform_entry = tk.Entry(dialog, width=30)
+            platform_entry.pack()
+            platform_entry.insert(0, course[2])
 
-        def submit():
-            title = title_entry.get().strip()
-            platform = platform_entry.get().strip()
-            if title and platform:
-                self.db.update_course(course_id, title=title, platform=platform)
-                self.load_courses(self.search_entry.get())
-                dialog.destroy()
-                messagebox.showinfo("Success", f"Updated course ID {course_id}")
-            else:
-                messagebox.showwarning("Input Error", "Please fill in both fields")
+            def submit():
+                title = title_entry.get().strip()
+                platform = platform_entry.get().strip()
+                if not title or not platform:
+                    messagebox.showwarning("Input Error", "Title and platform are required")
+                    return
+                try:
+                    self.db.update_course(course_id, title=title, platform=platform)
+                    self.load_courses(self.search_entry.get())
+                    dialog.destroy()
+                    messagebox.showinfo("Success", f"Updated course ID {course_id}")
+                except ValueError as e:
+                    messagebox.showerror("Error", str(e))
 
-        ttk.Button(dialog, text="Submit", command=submit).pack(pady=10)
+            ttk.Button(dialog, text="Submit", command=submit).pack(pady=10)
+        except ValueError as e:
+            messagebox.showerror("Error", str(e))
 
     def delete_course(self):
         selected = self.tree.selection()
@@ -226,9 +245,12 @@ class CourseApp:
 
         course_id = int(self.tree.item(selected[0], "tags")[0])
         if messagebox.askyesno("Confirm Delete", "Are you sure you want to delete this course?"):
-            self.db.delete_course(course_id)
-            self.load_courses(self.search_entry.get())
-            messagebox.showinfo("Success", f"Deleted course ID {course_id}")
+            try:
+                self.db.delete_course(course_id)
+                self.load_courses(self.search_entry.get())
+                messagebox.showinfo("Success", f"Deleted course ID {course_id}")
+            except ValueError as e:
+                messagebox.showerror("Error", str(e))
 
     def set_progress_dialog(self):
         selected = self.tree.selection()
@@ -237,35 +259,44 @@ class CourseApp:
             return
 
         course_id = int(self.tree.item(selected[0], "tags")[0])
-        course = self.db.get_course_by_id(course_id)
+        try:
+            course = self.db.get_course_by_id(course_id)
+            if not course:
+                messagebox.showerror("Error", f"Course ID {course_id} not found")
+                return
 
-        dialog = tk.Toplevel(self.root)
-        dialog.title(f"Set Progress for {course[1]}")
-        dialog.geometry("300x120")
-        dialog.grab_set()
-        dialog.configure(bg="#f0f0f0" if self.current_theme == "light" else "#2d2d2d")
+            dialog = tk.Toplevel(self.root)
+            dialog.title(f"Set Progress for {course[1]}")
+            dialog.geometry("300x120")
+            dialog.grab_set()
+            dialog.configure(bg="#f0f0f0" if self.current_theme == "light" else "#2d2d2d")
 
-        tk.Label(dialog, text=f"Progress (0-100%): Current = {course[4]}%", bg=dialog.cget("bg"), fg="black" if self.current_theme == "light" else "white").pack(pady=5)
-        progress_entry = tk.Entry(dialog, width=10)
-        progress_entry.pack()
-        progress_entry.insert(0, course[4])
+            tk.Label(dialog, text=f"Progress (0-100%): Current = {course[4]}%", bg=dialog.cget("bg"), fg="black" if self.current_theme == "light" else "white").pack(pady=5)
+            progress_entry = tk.Entry(dialog, width=10)
+            progress_entry.pack()
+            progress_entry.insert(0, course[4])
 
-        def submit():
-            try:
-                progress = int(progress_entry.get().strip())
-                if 0 <= progress <= 100:
+            def submit():
+                try:
+                    progress = int(progress_entry.get().strip())
+                    if not 0 <= progress <= 100:
+                        messagebox.showwarning("Input Error", "Progress must be between 0 and 100")
+                        return
                     self.db.update_course(course_id, progress=progress)
                     status = "Completed" if progress == 100 else "In Progress" if progress > 0 else "Not Started"
                     self.db.update_course(course_id, status=status)
                     self.load_courses(self.search_entry.get())
                     dialog.destroy()
                     messagebox.showinfo("Success", f"Progress set to {progress}% for {course[1]}")
-                else:
-                    messagebox.showwarning("Input Error", "Progress must be between 0 and 100")
-            except ValueError:
-                messagebox.showwarning("Input Error", "Please enter a valid number")
+                except ValueError as e:
+                    if "invalid literal" in str(e):
+                        messagebox.showwarning("Input Error", "Please enter a valid number")
+                    else:
+                        messagebox.showerror("Error", str(e))
 
-        ttk.Button(dialog, text="Submit", command=submit).pack(pady=10)
+            ttk.Button(dialog, text="Submit", command=submit).pack(pady=10)
+        except ValueError as e:
+            messagebox.showerror("Error", str(e))
 
     def notes_dialog(self):
         selected = self.tree.selection()
@@ -274,27 +305,36 @@ class CourseApp:
             return
 
         course_id = int(self.tree.item(selected[0], "tags")[0])
-        course = self.db.get_course_by_id(course_id)
+        try:
+            course = self.db.get_course_by_id(course_id)
+            if not course:
+                messagebox.showerror("Error", f"Course ID {course_id} not found")
+                return
 
-        dialog = tk.Toplevel(self.root)
-        dialog.title(f"Notes for {course[1]}")
-        dialog.geometry("400x200")
-        dialog.grab_set()
-        dialog.configure(bg="#f0f0f0" if self.current_theme == "light" else "#2d2d2d")
+            dialog = tk.Toplevel(self.root)
+            dialog.title(f"Notes for {course[1]}")
+            dialog.geometry("400x200")
+            dialog.grab_set()
+            dialog.configure(bg="#f0f0f0" if self.current_theme == "light" else "#2d2d2d")
 
-        tk.Label(dialog, text="Notes:", bg=dialog.cget("bg"), fg="black" if self.current_theme == "light" else "white").pack(pady=5)
-        notes_text = tk.Text(dialog, width=40, height=10, bg="white" if self.current_theme == "light" else "#3c3c3c", fg="black" if self.current_theme == "light" else "white")
-        notes_text.pack()
-        notes_text.insert(tk.END, course[5])
+            tk.Label(dialog, text="Notes:", bg=dialog.cget("bg"), fg="black" if self.current_theme == "light" else "white").pack(pady=5)
+            notes_text = tk.Text(dialog, width=40, height=10, bg="white" if self.current_theme == "light" else "#3c3c3c", fg="black" if self.current_theme == "light" else "white")
+            notes_text.pack()
+            notes_text.insert(tk.END, course[5])
 
-        def submit():
-            notes = notes_text.get("1.0", tk.END).strip()
-            self.db.update_course(course_id, notes=notes)
-            self.load_courses(self.search_entry.get())
-            dialog.destroy()
-            messagebox.showinfo("Success", f"Notes updated for {course[1]}")
+            def submit():
+                notes = notes_text.get("1.0", tk.END).strip()
+                try:
+                    self.db.update_course(course_id, notes=notes)
+                    self.load_courses(self.search_entry.get())
+                    dialog.destroy()
+                    messagebox.showinfo("Success", f"Notes updated for {course[1]}")
+                except ValueError as e:
+                    messagebox.showerror("Error", str(e))
 
-        ttk.Button(dialog, text="Submit", command=submit).pack(pady=10)
+            ttk.Button(dialog, text="Submit", command=submit).pack(pady=10)
+        except ValueError as e:
+            messagebox.showerror("Error", str(e))
 
     def export_to_csv(self):
         filename = filedialog.asksaveasfilename(
@@ -303,8 +343,11 @@ class CourseApp:
             title="Save Courses As"
         )
         if filename:
-            self.db.export_to_csv(filename)
-            messagebox.showinfo("Success", f"Courses exported to {filename}")
+            try:
+                self.db.export_to_csv(filename)
+                messagebox.showinfo("Success", f"Courses exported to {filename}")
+            except ValueError as e:
+                messagebox.showerror("Error", str(e))
 
     def import_from_csv(self):
         filename = filedialog.askopenfilename(
@@ -312,21 +355,26 @@ class CourseApp:
             title="Import Courses From"
         )
         if filename:
-            self.db.close()
-            self.db = Database()
-            imported_count = self.db.import_from_csv(filename)
-            self.courses_cache = list(self.db.get_all_courses())
-            print(f"Imported {len(self.courses_cache)} courses")  # Debug print
-            self.load_courses(self.search_entry.get())
-            messagebox.showinfo("Success", f"Imported {len(self.courses_cache)} courses from {filename}")
+            try:
+                self.db.close()
+                self.db = Database()
+                count = self.db.import_from_csv(filename)
+                self.courses_cache = list(self.db.get_all_courses())
+                self.load_courses(self.search_entry.get())
+                messagebox.showinfo("Success", f"Imported {count} courses from {filename}")
+            except ValueError as e:
+                messagebox.showerror("Error", str(e))
 
     def reload_app(self):
-        self.db.close()
-        self.db = Database()
-        self.db.import_from_csv()
-        self.courses_cache = list(self.db.get_all_courses())
-        self.load_courses(self.search_entry.get())
-        messagebox.showinfo("Reload", "App reloaded successfully")
+        try:
+            self.db.close()
+            self.db = Database()
+            self.db.import_from_csv()
+            self.courses_cache = list(self.db.get_all_courses())
+            self.load_courses(self.search_entry.get())
+            messagebox.showinfo("Reload", "App reloaded successfully")
+        except ValueError as e:
+            messagebox.showerror("Error", str(e))
 
     def run(self):
         self.root.mainloop()
