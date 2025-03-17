@@ -32,6 +32,10 @@ class CourseApp:
         self.delete_button = tk.Button(self.button_frame, text="Delete Course", command=self.delete_course)
         self.delete_button.pack(side=tk.LEFT, padx=5)
 
+        # Set progress button
+        self.progress_button = tk.Button(self.button_frame, text="Set Progress", command=self.set_progress_dialog)
+        self.progress_button.pack(side=tk.LEFT, padx=5)
+
         # Reload button
         self.reload_button = tk.Button(self.button_frame, text="Reload", command=self.reload_app)
         self.reload_button.pack(side=tk.LEFT, padx=5)
@@ -77,10 +81,7 @@ class CourseApp:
             messagebox.showwarning("Selection Error", "Please select a course to edit")
             return
 
-        # Get course ID from selected item (assumes ID is first in tuple)
-        course_str = self.course_list.get(selected[0])
         course_id = int(self.db.get_all_courses()[selected[0]][0])
-
         dialog = tk.Toplevel(self.root)
         dialog.title("Edit Course")
         dialog.geometry("300x150")
@@ -89,12 +90,12 @@ class CourseApp:
         tk.Label(dialog, text="Course Title:").pack(pady=5)
         title_entry = tk.Entry(dialog, width=30)
         title_entry.pack()
-        title_entry.insert(0, self.db.get_all_courses()[selected[0]][1])  # Pre-fill title
+        title_entry.insert(0, self.db.get_all_courses()[selected[0]][1])
 
         tk.Label(dialog, text="Platform:").pack(pady=5)
         platform_entry = tk.Entry(dialog, width=30)
         platform_entry.pack()
-        platform_entry.insert(0, self.db.get_all_courses()[selected[0]][2])  # Pre-fill platform
+        platform_entry.insert(0, self.db.get_all_courses()[selected[0]][2])
 
         def submit():
             title = title_entry.get().strip()
@@ -120,6 +121,44 @@ class CourseApp:
             self.db.delete_course(course_id)
             self.load_courses()
             messagebox.showinfo("Success", f"Deleted course ID {course_id}")
+
+    def set_progress_dialog(self):
+        selected = self.course_list.curselection()
+        if not selected:
+            messagebox.showwarning("Selection Error", "Please select a course to set progress")
+            return
+
+        course_id = int(self.db.get_all_courses()[selected[0]][0])
+        course_title = self.db.get_all_courses()[selected[0]][1]
+        current_progress = self.db.get_all_courses()[selected[0]][4]
+
+        dialog = tk.Toplevel(self.root)
+        dialog.title(f"Set Progress for {course_title}")
+        dialog.geometry("300x120")
+        dialog.grab_set()
+
+        tk.Label(dialog, text=f"Progress (0-100%): Current = {current_progress}%").pack(pady=5)
+        progress_entry = tk.Entry(dialog, width=10)
+        progress_entry.pack()
+        progress_entry.insert(0, current_progress)
+
+        def submit():
+            try:
+                progress = int(progress_entry.get().strip())
+                if 0 <= progress <= 100:
+                    self.db.update_course(course_id, progress=progress)
+                    # Update status based on progress
+                    status = "Completed" if progress == 100 else "In Progress" if progress > 0 else "Not Started"
+                    self.db.update_course(course_id, status=status)
+                    self.load_courses()
+                    dialog.destroy()
+                    messagebox.showinfo("Success", f"Progress set to {progress}% for {course_title}")
+                else:
+                    messagebox.showwarning("Input Error", "Progress must be between 0 and 100")
+            except ValueError:
+                messagebox.showwarning("Input Error", "Please enter a valid number")
+
+        tk.Button(dialog, text="Submit", command=submit).pack(pady=10)
 
     def reload_app(self):
         self.db.close()
