@@ -13,6 +13,8 @@ class CourseApp:
         except ValueError as e:
             messagebox.showerror("Startup Error", str(e))
         self.courses_cache = list(self.db.get_all_courses())
+        self.sort_column = "title"  # Default sort
+        self.sort_reverse = False
 
         self.style = ttk.Style()
         self.current_theme = "light"
@@ -43,11 +45,11 @@ class CourseApp:
         self.tree = ttk.Treeview(self.frame, columns=("title", "platform", "status", "progress", "notes"), show="headings", height=20)
         self.tree.grid(row=2, column=0, sticky="nsew")
 
-        self.tree.heading("title", text="Title")
-        self.tree.heading("platform", text="Platform")
-        self.tree.heading("status", text="Status")
-        self.tree.heading("progress", text="Progress")
-        self.tree.heading("notes", text="Notes")
+        self.tree.heading("title", text="Title", command=lambda: self.sort_treeview("title"))
+        self.tree.heading("platform", text="Platform", command=lambda: self.sort_treeview("platform"))
+        self.tree.heading("status", text="Status", command=lambda: self.sort_treeview("status"))
+        self.tree.heading("progress", text="Progress", command=lambda: self.sort_treeview("progress"))
+        self.tree.heading("notes", text="Notes", command=lambda: self.sort_treeview("notes"))
 
         self.tree.column("title", width=150)
         self.tree.column("platform", width=100)
@@ -125,6 +127,14 @@ class CourseApp:
         self.configure_theme()
         self.load_courses()
 
+    def sort_treeview(self, column):
+        if self.sort_column == column:
+            self.sort_reverse = not self.sort_reverse
+        else:
+            self.sort_column = column
+            self.sort_reverse = False
+        self.load_courses(self.search_entry.get())
+
     def update_dashboard(self):
         try:
             total = len(self.courses_cache)
@@ -141,6 +151,10 @@ class CourseApp:
             for item in self.tree.get_children():
                 self.tree.delete(item)
             self.courses_cache = list(self.db.get_all_courses())
+            column_indices = {"title": 1, "platform": 2, "status": 3, "progress": 4, "notes": 5}
+            self.courses_cache.sort(key=lambda x: x[column_indices[self.sort_column]], reverse=self.sort_reverse)
+            if self.sort_column == "progress":  # Special case for numeric sort
+                self.courses_cache.sort(key=lambda x: int(x[4]), reverse=self.sort_reverse)
             for course in self.courses_cache:
                 notes_preview = course[5][:20] + "..." if course[5] and len(course[5]) > 20 else course[5]
                 display_text = f"{course[1]} - {course[2]} ({course[3]}, {course[4]}%) | Notes: {notes_preview}"
@@ -157,21 +171,24 @@ class CourseApp:
     def add_course_dialog(self):
         dialog = tk.Toplevel(self.root)
         dialog.title("Add New Course")
-        dialog.geometry("300x200")
+        dialog.geometry("400x250")
         dialog.grab_set()
         dialog.configure(bg="#f0f0f0" if self.current_theme == "light" else "#2d2d2d")
 
-        tk.Label(dialog, text="Course Title:", bg=dialog.cget("bg"), fg="black" if self.current_theme == "light" else "white").pack(pady=5)
-        title_entry = tk.Entry(dialog, width=30)
-        title_entry.pack()
+        frame = tk.Frame(dialog, bg=dialog.cget("bg"))
+        frame.pack(padx=20, pady=20, fill="both", expand=True)
 
-        tk.Label(dialog, text="Platform:", bg=dialog.cget("bg"), fg="black" if self.current_theme == "light" else "white").pack(pady=5)
-        platform_entry = tk.Entry(dialog, width=30)
-        platform_entry.pack()
+        tk.Label(frame, text="Course Title:", bg=frame.cget("bg"), fg="black" if self.current_theme == "light" else "white").grid(row=0, column=0, pady=5, sticky="w")
+        title_entry = tk.Entry(frame, width=40)
+        title_entry.grid(row=0, column=1, pady=5)
 
-        tk.Label(dialog, text="Notes:", bg=dialog.cget("bg"), fg="black" if self.current_theme == "light" else "white").pack(pady=5)
-        notes_entry = tk.Entry(dialog, width=30)
-        notes_entry.pack()
+        tk.Label(frame, text="Platform:", bg=frame.cget("bg"), fg="black" if self.current_theme == "light" else "white").grid(row=1, column=0, pady=5, sticky="w")
+        platform_entry = tk.Entry(frame, width=40)
+        platform_entry.grid(row=1, column=1, pady=5)
+
+        tk.Label(frame, text="Notes:", bg=frame.cget("bg"), fg="black" if self.current_theme == "light" else "white").grid(row=2, column=0, pady=5, sticky="w")
+        notes_entry = tk.Entry(frame, width=40)
+        notes_entry.grid(row=2, column=1, pady=5)
 
         def submit():
             title = title_entry.get().strip()
@@ -188,7 +205,8 @@ class CourseApp:
             except ValueError as e:
                 messagebox.showerror("Error", str(e))
 
-        ttk.Button(dialog, text="Submit", command=submit).pack(pady=10)
+        submit_button = ttk.Button(frame, text="Submit", command=submit)
+        submit_button.grid(row=3, column=0, columnspan=2, pady=20)
 
     def edit_course_dialog(self):
         selected = self.tree.selection()
@@ -205,18 +223,21 @@ class CourseApp:
 
             dialog = tk.Toplevel(self.root)
             dialog.title("Edit Course")
-            dialog.geometry("300x150")
+            dialog.geometry("400x200")
             dialog.grab_set()
             dialog.configure(bg="#f0f0f0" if self.current_theme == "light" else "#2d2d2d")
 
-            tk.Label(dialog, text="Course Title:", bg=dialog.cget("bg"), fg="black" if self.current_theme == "light" else "white").pack(pady=5)
-            title_entry = tk.Entry(dialog, width=30)
-            title_entry.pack()
+            frame = tk.Frame(dialog, bg=dialog.cget("bg"))
+            frame.pack(padx=20, pady=20, fill="both", expand=True)
+
+            tk.Label(frame, text="Course Title:", bg=frame.cget("bg"), fg="black" if self.current_theme == "light" else "white").grid(row=0, column=0, pady=5, sticky="w")
+            title_entry = tk.Entry(frame, width=40)
+            title_entry.grid(row=0, column=1, pady=5)
             title_entry.insert(0, course[1])
 
-            tk.Label(dialog, text="Platform:", bg=dialog.cget("bg"), fg="black" if self.current_theme == "light" else "white").pack(pady=5)
-            platform_entry = tk.Entry(dialog, width=30)
-            platform_entry.pack()
+            tk.Label(frame, text="Platform:", bg=frame.cget("bg"), fg="black" if self.current_theme == "light" else "white").grid(row=1, column=0, pady=5, sticky="w")
+            platform_entry = tk.Entry(frame, width=40)
+            platform_entry.grid(row=1, column=1, pady=5)
             platform_entry.insert(0, course[2])
 
             def submit():
@@ -233,7 +254,8 @@ class CourseApp:
                 except ValueError as e:
                     messagebox.showerror("Error", str(e))
 
-            ttk.Button(dialog, text="Submit", command=submit).pack(pady=10)
+            submit_button = ttk.Button(frame, text="Submit", command=submit)
+            submit_button.grid(row=2, column=0, columnspan=2, pady=20)
         except ValueError as e:
             messagebox.showerror("Error", str(e))
 
@@ -267,13 +289,16 @@ class CourseApp:
 
             dialog = tk.Toplevel(self.root)
             dialog.title(f"Set Progress for {course[1]}")
-            dialog.geometry("300x120")
+            dialog.geometry("400x150")
             dialog.grab_set()
             dialog.configure(bg="#f0f0f0" if self.current_theme == "light" else "#2d2d2d")
 
-            tk.Label(dialog, text=f"Progress (0-100%): Current = {course[4]}%", bg=dialog.cget("bg"), fg="black" if self.current_theme == "light" else "white").pack(pady=5)
-            progress_entry = tk.Entry(dialog, width=10)
-            progress_entry.pack()
+            frame = tk.Frame(dialog, bg=dialog.cget("bg"))
+            frame.pack(padx=20, pady=20, fill="both", expand=True)
+
+            tk.Label(frame, text=f"Progress (0-100%): Current = {course[4]}%", bg=frame.cget("bg"), fg="black" if self.current_theme == "light" else "white").grid(row=0, column=0, pady=5, sticky="w")
+            progress_entry = tk.Entry(frame, width=10)
+            progress_entry.grid(row=0, column=1, pady=5)
             progress_entry.insert(0, course[4])
 
             def submit():
@@ -294,7 +319,8 @@ class CourseApp:
                     else:
                         messagebox.showerror("Error", str(e))
 
-            ttk.Button(dialog, text="Submit", command=submit).pack(pady=10)
+            submit_button = ttk.Button(frame, text="Submit", command=submit)
+            submit_button.grid(row=1, column=0, columnspan=2, pady=20)
         except ValueError as e:
             messagebox.showerror("Error", str(e))
 
@@ -313,13 +339,16 @@ class CourseApp:
 
             dialog = tk.Toplevel(self.root)
             dialog.title(f"Notes for {course[1]}")
-            dialog.geometry("400x200")
+            dialog.geometry("400x300")
             dialog.grab_set()
             dialog.configure(bg="#f0f0f0" if self.current_theme == "light" else "#2d2d2d")
 
-            tk.Label(dialog, text="Notes:", bg=dialog.cget("bg"), fg="black" if self.current_theme == "light" else "white").pack(pady=5)
-            notes_text = tk.Text(dialog, width=40, height=10, bg="white" if self.current_theme == "light" else "#3c3c3c", fg="black" if self.current_theme == "light" else "white")
-            notes_text.pack()
+            frame = tk.Frame(dialog, bg=dialog.cget("bg"))
+            frame.pack(padx=20, pady=20, fill="both", expand=True)
+
+            tk.Label(frame, text="Notes:", bg=frame.cget("bg"), fg="black" if self.current_theme == "light" else "white").grid(row=0, column=0, pady=5, sticky="nw")
+            notes_text = tk.Text(frame, width=40, height=10, bg="white" if self.current_theme == "light" else "#3c3c3c", fg="black" if self.current_theme == "light" else "white")
+            notes_text.grid(row=1, column=0, columnspan=2, pady=5)
             notes_text.insert(tk.END, course[5])
 
             def submit():
@@ -332,7 +361,8 @@ class CourseApp:
                 except ValueError as e:
                     messagebox.showerror("Error", str(e))
 
-            ttk.Button(dialog, text="Submit", command=submit).pack(pady=10)
+            submit_button = ttk.Button(frame, text="Submit", command=submit)
+            submit_button.grid(row=2, column=0, columnspan=2, pady=20)
         except ValueError as e:
             messagebox.showerror("Error", str(e))
 
