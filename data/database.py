@@ -28,6 +28,10 @@ class Database:
         self.cursor.execute("SELECT * FROM courses")
         return self.cursor.fetchall()
 
+    def get_course_by_id(self, course_id):
+        self.cursor.execute("SELECT * FROM courses WHERE id = ?", (course_id,))
+        return self.cursor.fetchone()
+
     def update_course(self, course_id, title=None, platform=None, status=None, progress=None, notes=None):
         updates = []
         params = []
@@ -60,31 +64,31 @@ class Database:
         courses = self.get_all_courses()
         with open(filename, 'w', newline='', encoding='utf-8') as csvfile:
             writer = csv.writer(csvfile)
-            # Write header
             writer.writerow(["id", "title", "platform", "status", "progress", "notes"])
-            # Write data
             for course in courses:
                 writer.writerow(course)
 
     def import_from_csv(self, filename="courses.csv"):
+        count = 0
         try:
             with open(filename, 'r', newline='', encoding='utf-8') as csvfile:
                 reader = csv.reader(csvfile)
                 next(reader)  # Skip header
                 for row in reader:
-                    # Ensure row has enough columns, fill missing with defaults
-                    row = row + [""] * (6 - len(row))
+                    row = row + [""] * (6 - len(row))  # Pad short rows
                     id, title, platform, status, progress, notes = row
-                    # Insert without ID (let SQLite assign new IDs)
                     self.cursor.execute(
                         "INSERT INTO courses (title, platform, status, progress, notes) VALUES (?, ?, ?, ?, ?)",
                         (title, platform, status or "Not Started", int(progress or 0), notes)
                     )
+                    count += 1
                 self.conn.commit()
+            print(f"Imported {count} courses from {filename}")  # Debug print
         except FileNotFoundError:
-            pass  # Silently ignore if file doesn't exist (fresh start)
+            pass
         except Exception as e:
             print(f"Error importing CSV: {e}")
+        return count
 
     def close(self):
         self.conn.close()
@@ -92,5 +96,5 @@ class Database:
 if __name__ == "__main__":
     db = Database()
     db.add_course("Test Course", "Udemy", "Great intro")
-    db.export_to_csv()
+    print(db.get_course_by_id(1))
     db.close()
