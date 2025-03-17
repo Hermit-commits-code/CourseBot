@@ -1,0 +1,1501 @@
+id,title,platform,status,progress,notes
+1,Course 1,Pluralsight,In Progress,69,
+2,Course 2,edX,In Progress,75,Notes for course 2
+3,Course 3,Pluralsight,In Progress,41,Notes for course 3
+4,Course 4,edX,In Progress,91,Notes for course 4
+5,Course 5,Zenva,In Progress,91,Notes for course 5
+6,Course 6,Coursera,In Progress,38,Notes for course 6
+7,Course 7,Zenva,In Progress,29,Notes for course 7
+8,Course 8,Coursera,In Progress,94,
+9,Course 9,Zenva,In Progress,58,
+10,Course 10,Udemy,In Progress,2,
+11,Course 11,Pluralsight,In Progress,49,
+12,Course 12,Coursera,In Progress,13,
+13,Course 13,Pluralsight,In Progress,63,Notes for course 13
+14,Course 14,Coursera,In Progress,97,Notes for course 14
+15,Course 15,Coursera,In Progress,96,Notes for course 15
+16,Course 16,edX,In Progress,71,
+17,Course 17,Coursera,In Progress,53,
+18,Course 18,Pluralsight,In Progress,25,
+19,Course 19,edX,In Progress,6,
+20,Course 20,edX,In Progress,55,Notes for course 20
+21,Course 21,Udemy,In Progress,25,
+22,Course 22,edX,In Progress,30,
+23,Course 23,Udemy,In Progress,69,Notes for course 23
+24,Course 24,Coursera,In Progress,4,Notes for course 24
+25,Course 25,Zenva,In Progress,99,Notes for course 25
+26,Course 26,edX,In Progress,97,
+27,Course 27,Zenva,In Progress,12,
+28,Course 28,Pluralsight,In Progress,81,
+29,Course 29,Coursera,In Progress,62,Notes for course 29
+30,Course 30,Coursera,In Progress,22,Notes for course 30
+31,Course 31,Pluralsight,In Progress,4,Notes for course 31
+32,Course 32,edX,In Progress,80,
+33,Course 33,Pluralsight,In Progress,5,
+34,Course 34,Coursera,In Progress,51,Notes for course 34
+35,Course 35,Zenva,In Progress,5,Notes for course 35
+36,Course 36,Udemy,In Progress,9,
+37,Course 37,Zenva,In Progress,43,
+38,Course 38,Zenva,In Progress,32,Notes for course 38
+39,Course 39,Coursera,In Progress,13,Notes for course 39
+40,Course 40,Zenva,In Progress,35,
+41,Course 41,Coursera,In Progress,52,
+42,Course 42,edX,In Progress,98,
+43,Course 43,Coursera,In Progress,24,Notes for course 43
+44,Course 44,Pluralsight,In Progress,76,Notes for course 44
+45,Course 45,Coursera,In Progress,89,
+46,Course 46,Zenva,In Progress,50,Notes for course 46
+47,Course 47,Zenva,In Progress,13,
+48,Course 48,Pluralsight,In Progress,25,
+49,Course 49,Zenva,In Progress,52,
+50,Course 50,Zenva,In Progress,38,Notes for course 50
+51,Course 51,Pluralsight,In Progress,2,
+52,Course 52,edX,In Progress,57,Notes for course 52
+53,Course 53,Coursera,In Progress,40,Notes for course 53
+54,Course 54,Udemy,In Progress,94,Notes for course 54
+55,Course 55,Udemy,In Progress,65,
+56,Course 56,Pluralsight,In Progress,21,Notes for course 56
+57,Course 57,edX,In Progress,9,Notes for course 57
+58,Course 58,Pluralsight,In Progress,70,
+59,Course 59,Udemy,In Progress,98,
+60,Course 60,Zenva,In Progress,44,
+61,Course 61,edX,In Progress,98,
+62,Course 62,Zenva,In Progress,83,Notes for course 62
+63,Course 63,Coursera,Completed,100,
+64,Course 64,edX,In Progress,45,Notes for course 64
+65,Course 65,Coursera,In Progress,17,
+66,Course 66,edX,In Progress,32,Notes for course 66
+67,Course 67,Coursera,In Progress,55,Notes for course 67
+68,Course 68,Zenva,In Progress,62,Notes for course 68
+69,Course 69,Zenva,In Progress,54,Notes for course 69
+70,Course 70,Udemy,In Progress,70,
+71,Course 71,Zenva,In Progress,62,Notes for course 71
+72,Course 72,Coursera,In Progress,38,
+73,Course 73,Pluralsight,In Progress,71,Notes for course 73
+74,Course 74,Zenva,In Progress,79,
+75,Course 75,edX,In Progress,41,Notes for course 75
+76,Course 76,Zenva,In Progress,42,
+77,Course 77,Udemy,In Progress,10,Notes for course 77
+78,Course 78,Udemy,Not Started,0,
+79,Course 79,Udemy,In Progress,40,Notes for course 79
+80,Course 80,Pluralsight,In Progress,20,
+81,Course 81,Zenva,In Progress,37,Notes for course 81
+82,Course 82,Zenva,In Progress,21,Notes for course 82
+83,Course 83,Udemy,Completed,100,
+84,Course 84,Coursera,In Progress,86,Notes for course 84
+85,Course 85,Pluralsight,In Progress,52,Notes for course 85
+86,Course 86,Zenva,In Progress,33,Notes for course 86
+87,Course 87,Pluralsight,In Progress,96,
+88,Course 88,Udemy,In Progress,37,Notes for course 88
+89,Course 89,Zenva,In Progress,5,Notes for course 89
+90,Course 90,Udemy,In Progress,59,Notes for course 90
+91,Course 91,Coursera,In Progress,99,
+92,Course 92,Udemy,Not Started,0,Notes for course 92
+93,Course 93,edX,In Progress,91,
+94,Course 94,edX,In Progress,61,
+95,Course 95,edX,In Progress,67,Notes for course 95
+96,Course 96,edX,In Progress,34,Notes for course 96
+97,Course 97,Coursera,In Progress,54,
+98,Course 98,Udemy,In Progress,85,
+99,Course 99,Zenva,In Progress,50,
+100,Course 100,Pluralsight,In Progress,79,
+101,Course 101,Coursera,In Progress,21,
+102,Course 102,Zenva,In Progress,59,
+103,Course 103,Zenva,In Progress,59,Notes for course 103
+104,Course 104,Coursera,In Progress,17,
+105,Course 105,edX,In Progress,74,Notes for course 105
+106,Course 106,Udemy,Completed,100,Notes for course 106
+107,Course 107,Coursera,In Progress,74,
+108,Course 108,Udemy,In Progress,13,
+109,Course 109,Pluralsight,In Progress,22,
+110,Course 110,edX,In Progress,2,
+111,Course 111,Udemy,Not Started,0,
+112,Course 112,Coursera,In Progress,22,Notes for course 112
+113,Course 113,Pluralsight,In Progress,63,Notes for course 113
+114,Course 114,Coursera,In Progress,79,
+115,Course 115,Coursera,In Progress,94,Notes for course 115
+116,Course 116,Udemy,In Progress,24,Notes for course 116
+117,Course 117,Pluralsight,In Progress,85,
+118,Course 118,Udemy,In Progress,37,Notes for course 118
+119,Course 119,Pluralsight,In Progress,37,
+120,Course 120,edX,In Progress,47,
+121,Course 121,Coursera,In Progress,17,Notes for course 121
+122,Course 122,Udemy,In Progress,24,
+123,Course 123,Coursera,In Progress,55,Notes for course 123
+124,Course 124,Udemy,In Progress,35,Notes for course 124
+125,Course 125,Zenva,In Progress,45,
+126,Course 126,Pluralsight,In Progress,48,
+127,Course 127,edX,In Progress,4,Notes for course 127
+128,Course 128,edX,In Progress,88,Notes for course 128
+129,Course 129,Zenva,In Progress,21,Notes for course 129
+130,Course 130,edX,In Progress,86,Notes for course 130
+131,Course 131,Zenva,In Progress,38,
+132,Course 132,Coursera,Not Started,0,
+133,Course 133,Pluralsight,In Progress,82,Notes for course 133
+134,Course 134,edX,In Progress,50,
+135,Course 135,edX,In Progress,45,Notes for course 135
+136,Course 136,Zenva,In Progress,6,
+137,Course 137,Pluralsight,In Progress,26,
+138,Course 138,edX,In Progress,29,Notes for course 138
+139,Course 139,Udemy,In Progress,74,
+140,Course 140,Udemy,In Progress,49,Notes for course 140
+141,Course 141,Pluralsight,In Progress,4,
+142,Course 142,Udemy,In Progress,61,
+143,Course 143,Coursera,In Progress,82,
+144,Course 144,edX,In Progress,54,Notes for course 144
+145,Course 145,Pluralsight,In Progress,16,
+146,Course 146,Pluralsight,In Progress,99,Notes for course 146
+147,Course 147,Zenva,In Progress,79,Notes for course 147
+148,Course 148,Coursera,In Progress,77,
+149,Course 149,edX,In Progress,6,
+150,Course 150,edX,In Progress,61,Notes for course 150
+151,Course 151,Coursera,In Progress,14,
+152,Course 152,Coursera,Completed,100,
+153,Course 153,Zenva,In Progress,21,Notes for course 153
+154,Course 154,Udemy,In Progress,92,
+155,Course 155,edX,In Progress,79,
+156,Course 156,Zenva,In Progress,24,Notes for course 156
+157,Course 157,edX,In Progress,85,Notes for course 157
+158,Course 158,Pluralsight,In Progress,11,
+159,Course 159,Udemy,In Progress,99,Notes for course 159
+160,Course 160,Zenva,In Progress,95,
+161,Course 161,Coursera,In Progress,99,
+162,Course 162,Coursera,In Progress,66,Notes for course 162
+163,Course 163,Udemy,In Progress,53,
+164,Course 164,Zenva,In Progress,34,Notes for course 164
+165,Course 165,edX,In Progress,75,Notes for course 165
+166,Course 166,Zenva,In Progress,34,
+167,Course 167,Coursera,In Progress,69,
+168,Course 168,Zenva,In Progress,97,
+169,Course 169,Pluralsight,In Progress,42,Notes for course 169
+170,Course 170,Pluralsight,In Progress,74,Notes for course 170
+171,Course 171,Udemy,In Progress,21,Notes for course 171
+172,Course 172,Coursera,In Progress,23,Notes for course 172
+173,Course 173,Pluralsight,In Progress,52,
+174,Course 174,Coursera,In Progress,30,
+175,Course 175,Zenva,In Progress,83,Notes for course 175
+176,Course 176,Pluralsight,In Progress,28,Notes for course 176
+177,Course 177,Pluralsight,In Progress,44,Notes for course 177
+178,Course 178,Udemy,In Progress,86,
+179,Course 179,Pluralsight,In Progress,81,
+180,Course 180,edX,In Progress,89,Notes for course 180
+181,Course 181,edX,In Progress,95,
+182,Course 182,Pluralsight,In Progress,90,
+183,Course 183,Zenva,In Progress,45,Notes for course 183
+184,Course 184,edX,In Progress,43,Notes for course 184
+185,Course 185,Udemy,In Progress,94,Notes for course 185
+186,Course 186,Pluralsight,In Progress,33,Notes for course 186
+187,Course 187,Pluralsight,In Progress,67,
+188,Course 188,edX,In Progress,11,Notes for course 188
+189,Course 189,Zenva,In Progress,8,Notes for course 189
+190,Course 190,Coursera,In Progress,34,
+191,Course 191,Zenva,In Progress,54,Notes for course 191
+192,Course 192,edX,In Progress,74,Notes for course 192
+193,Course 193,Pluralsight,In Progress,23,
+194,Course 194,Udemy,In Progress,26,
+195,Course 195,Zenva,In Progress,54,
+196,Course 196,Pluralsight,In Progress,99,
+197,Course 197,Udemy,In Progress,73,Notes for course 197
+198,Course 198,Pluralsight,In Progress,45,
+199,Course 199,edX,In Progress,31,Notes for course 199
+200,Course 200,Udemy,In Progress,12,Notes for course 200
+201,Course 201,Coursera,In Progress,66,Notes for course 201
+202,Course 202,Zenva,In Progress,48,
+203,Course 203,Coursera,In Progress,40,Notes for course 203
+204,Course 204,Coursera,In Progress,67,Notes for course 204
+205,Course 205,Pluralsight,In Progress,37,Notes for course 205
+206,Course 206,Udemy,In Progress,26,Notes for course 206
+207,Course 207,Coursera,In Progress,24,Notes for course 207
+208,Course 208,Pluralsight,In Progress,13,Notes for course 208
+209,Course 209,Zenva,In Progress,14,Notes for course 209
+210,Course 210,Pluralsight,In Progress,82,Notes for course 210
+211,Course 211,Pluralsight,In Progress,92,Notes for course 211
+212,Course 212,edX,In Progress,36,Notes for course 212
+213,Course 213,Zenva,In Progress,52,Notes for course 213
+214,Course 214,Zenva,In Progress,80,
+215,Course 215,edX,In Progress,87,Notes for course 215
+216,Course 216,Pluralsight,In Progress,42,
+217,Course 217,Zenva,In Progress,57,Notes for course 217
+218,Course 218,edX,In Progress,81,Notes for course 218
+219,Course 219,Pluralsight,In Progress,62,
+220,Course 220,Coursera,In Progress,38,
+221,Course 221,edX,In Progress,36,
+222,Course 222,Zenva,In Progress,43,
+223,Course 223,Coursera,In Progress,6,Notes for course 223
+224,Course 224,Pluralsight,In Progress,74,
+225,Course 225,Pluralsight,In Progress,29,Notes for course 225
+226,Course 226,Pluralsight,In Progress,90,Notes for course 226
+227,Course 227,edX,In Progress,8,
+228,Course 228,Zenva,In Progress,19,
+229,Course 229,Udemy,In Progress,9,
+230,Course 230,edX,In Progress,54,Notes for course 230
+231,Course 231,edX,In Progress,72,
+232,Course 232,edX,In Progress,43,Notes for course 232
+233,Course 233,Pluralsight,In Progress,95,
+234,Course 234,Pluralsight,In Progress,46,
+235,Course 235,Udemy,In Progress,98,Notes for course 235
+236,Course 236,Udemy,In Progress,22,
+237,Course 237,Coursera,In Progress,46,
+238,Course 238,Coursera,In Progress,13,
+239,Course 239,Udemy,In Progress,72,Notes for course 239
+240,Course 240,Zenva,In Progress,53,
+241,Course 241,Coursera,In Progress,73,
+242,Course 242,Pluralsight,In Progress,64,
+243,Course 243,Coursera,In Progress,62,Notes for course 243
+244,Course 244,Pluralsight,In Progress,79,Notes for course 244
+245,Course 245,edX,In Progress,47,Notes for course 245
+246,Course 246,edX,In Progress,71,Notes for course 246
+247,Course 247,Udemy,In Progress,84,Notes for course 247
+248,Course 248,Udemy,In Progress,72,
+249,Course 249,Pluralsight,In Progress,94,
+250,Course 250,Udemy,In Progress,2,
+251,Course 251,Zenva,In Progress,47,
+252,Course 252,Zenva,In Progress,52,
+253,Course 253,Pluralsight,In Progress,52,Notes for course 253
+254,Course 254,Udemy,In Progress,91,Notes for course 254
+255,Course 255,Udemy,In Progress,84,
+256,Course 256,Zenva,In Progress,41,
+257,Course 257,Coursera,In Progress,8,Notes for course 257
+258,Course 258,edX,In Progress,94,Notes for course 258
+259,Course 259,Zenva,In Progress,87,Notes for course 259
+260,Course 260,edX,In Progress,58,
+261,Course 261,Zenva,In Progress,44,
+262,Course 262,edX,In Progress,66,Notes for course 262
+263,Course 263,Zenva,In Progress,19,
+264,Course 264,Pluralsight,In Progress,19,
+265,Course 265,Udemy,In Progress,61,
+266,Course 266,edX,In Progress,83,
+267,Course 267,Coursera,In Progress,68,Notes for course 267
+268,Course 268,Zenva,In Progress,3,Notes for course 268
+269,Course 269,Pluralsight,In Progress,99,
+270,Course 270,edX,In Progress,94,Notes for course 270
+271,Course 271,Udemy,In Progress,47,
+272,Course 272,edX,In Progress,34,Notes for course 272
+273,Course 273,Udemy,In Progress,8,
+274,Course 274,Zenva,In Progress,3,
+275,Course 275,Pluralsight,In Progress,57,
+276,Course 276,Udemy,In Progress,78,
+277,Course 277,Zenva,In Progress,58,Notes for course 277
+278,Course 278,Coursera,In Progress,55,Notes for course 278
+279,Course 279,Coursera,In Progress,57,Notes for course 279
+280,Course 280,Coursera,In Progress,81,Notes for course 280
+281,Course 281,edX,In Progress,70,Notes for course 281
+282,Course 282,Udemy,In Progress,57,
+283,Course 283,Zenva,In Progress,63,
+284,Course 284,Coursera,In Progress,95,
+285,Course 285,Udemy,In Progress,64,Notes for course 285
+286,Course 286,Zenva,In Progress,95,
+287,Course 287,Udemy,In Progress,99,Notes for course 287
+288,Course 288,Zenva,In Progress,95,
+289,Course 289,edX,In Progress,52,Notes for course 289
+290,Course 290,edX,In Progress,83,Notes for course 290
+291,Course 291,Coursera,In Progress,80,Notes for course 291
+292,Course 292,Udemy,In Progress,85,Notes for course 292
+293,Course 293,Pluralsight,In Progress,56,Notes for course 293
+294,Course 294,Pluralsight,In Progress,19,Notes for course 294
+295,Course 295,Udemy,In Progress,10,
+296,Course 296,Coursera,In Progress,64,
+297,Course 297,edX,In Progress,60,Notes for course 297
+298,Course 298,Udemy,In Progress,25,
+299,Course 299,Pluralsight,In Progress,58,Notes for course 299
+300,Course 300,edX,In Progress,78,
+301,Course 301,Udemy,In Progress,27,
+302,Course 302,Zenva,In Progress,16,
+303,Course 303,edX,In Progress,89,Notes for course 303
+304,Course 304,edX,In Progress,23,Notes for course 304
+305,Course 305,edX,In Progress,39,Notes for course 305
+306,Course 306,edX,In Progress,4,Notes for course 306
+307,Course 307,Udemy,In Progress,26,Notes for course 307
+308,Course 308,Zenva,In Progress,66,
+309,Course 309,Pluralsight,In Progress,15,
+310,Course 310,Coursera,In Progress,34,
+311,Course 311,Udemy,In Progress,65,
+312,Course 312,edX,In Progress,39,Notes for course 312
+313,Course 313,edX,In Progress,85,
+314,Course 314,Udemy,In Progress,46,Notes for course 314
+315,Course 315,Coursera,In Progress,59,Notes for course 315
+316,Course 316,Coursera,In Progress,36,
+317,Course 317,Pluralsight,In Progress,50,Notes for course 317
+318,Course 318,edX,In Progress,7,Notes for course 318
+319,Course 319,Zenva,In Progress,93,Notes for course 319
+320,Course 320,Zenva,In Progress,4,
+321,Course 321,Zenva,In Progress,89,Notes for course 321
+322,Course 322,Pluralsight,In Progress,9,Notes for course 322
+323,Course 323,Pluralsight,In Progress,65,Notes for course 323
+324,Course 324,Udemy,In Progress,71,Notes for course 324
+325,Course 325,Pluralsight,In Progress,97,Notes for course 325
+326,Course 326,edX,In Progress,58,Notes for course 326
+327,Course 327,Zenva,In Progress,57,
+328,Course 328,edX,In Progress,43,Notes for course 328
+329,Course 329,Coursera,In Progress,61,Notes for course 329
+330,Course 330,Udemy,In Progress,69,
+331,Course 331,Coursera,In Progress,68,Notes for course 331
+332,Course 332,Pluralsight,In Progress,52,
+333,Course 333,Pluralsight,In Progress,7,Notes for course 333
+334,Course 334,Zenva,In Progress,13,
+335,Course 335,Coursera,In Progress,66,Notes for course 335
+336,Course 336,Coursera,In Progress,69,Notes for course 336
+337,Course 337,Coursera,In Progress,17,
+338,Course 338,Coursera,In Progress,18,
+339,Course 339,edX,In Progress,45,Notes for course 339
+340,Course 340,edX,In Progress,44,
+341,Course 341,Pluralsight,In Progress,64,
+342,Course 342,Zenva,In Progress,28,
+343,Course 343,Pluralsight,In Progress,12,Notes for course 343
+344,Course 344,Coursera,In Progress,72,
+345,Course 345,Coursera,In Progress,20,Notes for course 345
+346,Course 346,Zenva,In Progress,33,Notes for course 346
+347,Course 347,Udemy,In Progress,61,Notes for course 347
+348,Course 348,Zenva,In Progress,39,
+349,Course 349,Coursera,In Progress,2,
+350,Course 350,Pluralsight,In Progress,14,Notes for course 350
+351,Course 351,Udemy,In Progress,97,Notes for course 351
+352,Course 352,Pluralsight,In Progress,82,Notes for course 352
+353,Course 353,Zenva,In Progress,88,Notes for course 353
+354,Course 354,edX,In Progress,70,Notes for course 354
+355,Course 355,edX,In Progress,86,
+356,Course 356,Pluralsight,In Progress,62,
+357,Course 357,Pluralsight,In Progress,98,
+358,Course 358,Udemy,In Progress,88,
+359,Course 359,Coursera,In Progress,38,
+360,Course 360,edX,In Progress,96,
+361,Course 361,Coursera,In Progress,58,Notes for course 361
+362,Course 362,Coursera,In Progress,96,
+363,Course 363,Coursera,In Progress,60,
+364,Course 364,edX,In Progress,85,
+365,Course 365,Pluralsight,In Progress,63,Notes for course 365
+366,Course 366,Zenva,In Progress,45,
+367,Course 367,Pluralsight,In Progress,57,
+368,Course 368,edX,In Progress,79,Notes for course 368
+369,Course 369,Pluralsight,In Progress,24,
+370,Course 370,Pluralsight,In Progress,52,Notes for course 370
+371,Course 371,Pluralsight,In Progress,40,
+372,Course 372,Coursera,In Progress,26,Notes for course 372
+373,Course 373,Coursera,In Progress,62,Notes for course 373
+374,Course 374,Udemy,In Progress,79,Notes for course 374
+375,Course 375,Udemy,In Progress,43,
+376,Course 376,edX,In Progress,61,
+377,Course 377,edX,In Progress,35,Notes for course 377
+378,Course 378,Udemy,In Progress,79,Notes for course 378
+379,Course 379,Udemy,In Progress,81,Notes for course 379
+380,Course 380,Udemy,Not Started,0,Notes for course 380
+381,Course 381,Udemy,In Progress,99,
+382,Course 382,Udemy,In Progress,48,
+383,Course 383,Coursera,Completed,100,Notes for course 383
+384,Course 384,Coursera,In Progress,29,
+385,Course 385,Udemy,In Progress,85,
+386,Course 386,edX,In Progress,79,Notes for course 386
+387,Course 387,Pluralsight,In Progress,61,Notes for course 387
+388,Course 388,Udemy,In Progress,59,Notes for course 388
+389,Course 389,edX,In Progress,16,
+390,Course 390,Coursera,In Progress,59,Notes for course 390
+391,Course 391,Zenva,In Progress,40,Notes for course 391
+392,Course 392,Pluralsight,In Progress,28,
+393,Course 393,Coursera,In Progress,88,
+394,Course 394,Pluralsight,In Progress,94,Notes for course 394
+395,Course 395,edX,In Progress,60,Notes for course 395
+396,Course 396,Coursera,In Progress,84,
+397,Course 397,Udemy,In Progress,94,Notes for course 397
+398,Course 398,edX,In Progress,36,
+399,Course 399,Coursera,In Progress,63,Notes for course 399
+400,Course 400,edX,In Progress,20,
+401,Course 401,Coursera,In Progress,19,Notes for course 401
+402,Course 402,Coursera,In Progress,28,Notes for course 402
+403,Course 403,edX,In Progress,98,
+404,Course 404,edX,In Progress,59,Notes for course 404
+405,Course 405,Pluralsight,In Progress,81,
+406,Course 406,Coursera,In Progress,67,
+407,Course 407,Coursera,In Progress,20,
+408,Course 408,Coursera,In Progress,72,
+409,Course 409,Zenva,In Progress,91,Notes for course 409
+410,Course 410,Udemy,In Progress,32,Notes for course 410
+411,Course 411,Coursera,In Progress,85,Notes for course 411
+412,Course 412,Coursera,In Progress,85,Notes for course 412
+413,Course 413,edX,In Progress,66,
+414,Course 414,Coursera,In Progress,47,Notes for course 414
+415,Course 415,Zenva,In Progress,20,
+416,Course 416,Coursera,In Progress,74,
+417,Course 417,Pluralsight,In Progress,41,Notes for course 417
+418,Course 418,Zenva,In Progress,77,Notes for course 418
+419,Course 419,Pluralsight,In Progress,84,Notes for course 419
+420,Course 420,edX,In Progress,71,Notes for course 420
+421,Course 421,Pluralsight,In Progress,90,
+422,Course 422,Udemy,In Progress,77,Notes for course 422
+423,Course 423,Coursera,In Progress,80,
+424,Course 424,edX,In Progress,9,Notes for course 424
+425,Course 425,Udemy,In Progress,9,
+426,Course 426,Coursera,In Progress,61,Notes for course 426
+427,Course 427,Coursera,In Progress,25,
+428,Course 428,Coursera,In Progress,69,Notes for course 428
+429,Course 429,Coursera,In Progress,18,Notes for course 429
+430,Course 430,Pluralsight,In Progress,21,Notes for course 430
+431,Course 431,Zenva,In Progress,62,
+432,Course 432,Coursera,In Progress,43,Notes for course 432
+433,Course 433,Zenva,In Progress,78,Notes for course 433
+434,Course 434,Zenva,In Progress,20,
+435,Course 435,Coursera,In Progress,26,
+436,Course 436,Zenva,In Progress,79,Notes for course 436
+437,Course 437,Zenva,In Progress,31,Notes for course 437
+438,Course 438,Pluralsight,In Progress,71,Notes for course 438
+439,Course 439,Pluralsight,In Progress,84,
+440,Course 440,Zenva,In Progress,36,
+441,Course 441,Zenva,In Progress,43,Notes for course 441
+442,Course 442,Zenva,In Progress,87,Notes for course 442
+443,Course 443,edX,In Progress,86,
+444,Course 444,Pluralsight,In Progress,89,Notes for course 444
+445,Course 445,edX,In Progress,9,Notes for course 445
+446,Course 446,Udemy,In Progress,53,
+447,Course 447,Zenva,In Progress,65,
+448,Course 448,Coursera,In Progress,34,Notes for course 448
+449,Course 449,Pluralsight,In Progress,87,
+450,Course 450,Pluralsight,In Progress,44,Notes for course 450
+451,Course 451,edX,In Progress,62,
+452,Course 452,Zenva,In Progress,92,Notes for course 452
+453,Course 453,Pluralsight,In Progress,56,
+454,Course 454,Coursera,In Progress,59,
+455,Course 455,Coursera,In Progress,1,Notes for course 455
+456,Course 456,Udemy,In Progress,31,Notes for course 456
+457,Course 457,Coursera,In Progress,31,
+458,Course 458,Pluralsight,In Progress,60,
+459,Course 459,Udemy,In Progress,67,
+460,Course 460,edX,In Progress,30,Notes for course 460
+461,Course 461,Udemy,In Progress,14,Notes for course 461
+462,Course 462,edX,In Progress,75,
+463,Course 463,Udemy,In Progress,22,
+464,Course 464,Udemy,In Progress,64,Notes for course 464
+465,Course 465,Udemy,In Progress,65,Notes for course 465
+466,Course 466,Udemy,In Progress,37,
+467,Course 467,Udemy,In Progress,18,
+468,Course 468,Pluralsight,In Progress,1,Notes for course 468
+469,Course 469,edX,In Progress,36,Notes for course 469
+470,Course 470,Coursera,In Progress,2,Notes for course 470
+471,Course 471,Pluralsight,In Progress,39,Notes for course 471
+472,Course 472,Pluralsight,In Progress,31,
+473,Course 473,Coursera,In Progress,44,Notes for course 473
+474,Course 474,Zenva,In Progress,88,Notes for course 474
+475,Course 475,Udemy,In Progress,27,Notes for course 475
+476,Course 476,Udemy,Completed,100,Notes for course 476
+477,Course 477,Zenva,In Progress,37,
+478,Course 478,Coursera,In Progress,92,
+479,Course 479,Zenva,In Progress,68,Notes for course 479
+480,Course 480,Pluralsight,In Progress,69,Notes for course 480
+481,Course 481,Pluralsight,In Progress,73,Notes for course 481
+482,Course 482,Coursera,In Progress,20,
+483,Course 483,Pluralsight,In Progress,8,Notes for course 483
+484,Course 484,edX,In Progress,8,Notes for course 484
+485,Course 485,Zenva,In Progress,92,
+486,Course 486,Udemy,In Progress,69,Notes for course 486
+487,Course 487,edX,In Progress,86,Notes for course 487
+488,Course 488,Zenva,In Progress,95,
+489,Course 489,Zenva,In Progress,46,Notes for course 489
+490,Course 490,Coursera,In Progress,96,Notes for course 490
+491,Course 491,edX,In Progress,81,Notes for course 491
+492,Course 492,Udemy,In Progress,84,
+493,Course 493,Pluralsight,In Progress,33,
+494,Course 494,Coursera,In Progress,63,Notes for course 494
+495,Course 495,edX,In Progress,50,
+496,Course 496,Pluralsight,In Progress,43,
+497,Course 497,Zenva,In Progress,39,Notes for course 497
+498,Course 498,edX,In Progress,38,Notes for course 498
+499,Course 499,Zenva,In Progress,27,Notes for course 499
+500,Course 500,Coursera,In Progress,99,
+501,Course 501,Coursera,In Progress,32,
+502,Course 502,edX,In Progress,7,Notes for course 502
+503,Course 503,Udemy,In Progress,90,
+504,Course 504,Coursera,In Progress,59,Notes for course 504
+505,Course 505,edX,In Progress,49,
+506,Course 506,Udemy,In Progress,11,Notes for course 506
+507,Course 507,edX,In Progress,49,
+508,Course 508,Pluralsight,In Progress,75,
+509,Course 509,Udemy,In Progress,64,Notes for course 509
+510,Course 510,Pluralsight,In Progress,2,Notes for course 510
+511,Course 511,Zenva,In Progress,85,
+512,Course 512,Zenva,In Progress,21,Notes for course 512
+513,Course 513,edX,In Progress,18,Notes for course 513
+514,Course 514,Coursera,In Progress,96,Notes for course 514
+515,Course 515,Udemy,In Progress,61,
+516,Course 516,Zenva,In Progress,99,Notes for course 516
+517,Course 517,edX,In Progress,78,
+518,Course 518,Pluralsight,Completed,100,Notes for course 518
+519,Course 519,edX,In Progress,48,
+520,Course 520,Pluralsight,In Progress,3,
+521,Course 521,Coursera,In Progress,22,
+522,Course 522,Coursera,In Progress,51,Notes for course 522
+523,Course 523,Zenva,In Progress,3,
+524,Course 524,edX,In Progress,16,Notes for course 524
+525,Course 525,Pluralsight,In Progress,97,Notes for course 525
+526,Course 526,Zenva,In Progress,85,Notes for course 526
+527,Course 527,Udemy,In Progress,68,Notes for course 527
+528,Course 528,Udemy,In Progress,69,
+529,Course 529,edX,In Progress,75,
+530,Course 530,edX,In Progress,15,Notes for course 530
+531,Course 531,Zenva,In Progress,49,
+532,Course 532,Zenva,In Progress,37,Notes for course 532
+533,Course 533,Zenva,In Progress,84,Notes for course 533
+534,Course 534,edX,In Progress,51,Notes for course 534
+535,Course 535,Udemy,In Progress,15,
+536,Course 536,Pluralsight,In Progress,43,Notes for course 536
+537,Course 537,edX,In Progress,15,
+538,Course 538,Zenva,In Progress,16,Notes for course 538
+539,Course 539,Udemy,In Progress,29,
+540,Course 540,Udemy,In Progress,7,
+541,Course 541,Coursera,In Progress,39,
+542,Course 542,Udemy,In Progress,59,Notes for course 542
+543,Course 543,edX,In Progress,89,
+544,Course 544,Pluralsight,In Progress,68,Notes for course 544
+545,Course 545,Zenva,In Progress,85,
+546,Course 546,edX,In Progress,70,Notes for course 546
+547,Course 547,Pluralsight,In Progress,28,
+548,Course 548,Zenva,In Progress,60,
+549,Course 549,edX,In Progress,26,Notes for course 549
+550,Course 550,Udemy,In Progress,22,
+551,Course 551,Pluralsight,In Progress,21,Notes for course 551
+552,Course 552,Zenva,Not Started,0,
+553,Course 553,Udemy,In Progress,96,Notes for course 553
+554,Course 554,Pluralsight,In Progress,6,Notes for course 554
+555,Course 555,edX,In Progress,38,
+556,Course 556,Zenva,In Progress,38,
+557,Course 557,Pluralsight,In Progress,28,
+558,Course 558,Zenva,In Progress,49,
+559,Course 559,Coursera,In Progress,19,
+560,Course 560,Pluralsight,In Progress,30,
+561,Course 561,edX,In Progress,79,Notes for course 561
+562,Course 562,Coursera,In Progress,48,
+563,Course 563,Pluralsight,In Progress,62,Notes for course 563
+564,Course 564,Zenva,In Progress,37,
+565,Course 565,Udemy,In Progress,3,
+566,Course 566,Udemy,In Progress,91,Notes for course 566
+567,Course 567,Zenva,In Progress,93,
+568,Course 568,Zenva,In Progress,87,Notes for course 568
+569,Course 569,edX,In Progress,14,
+570,Course 570,Pluralsight,In Progress,6,Notes for course 570
+571,Course 571,Pluralsight,Not Started,0,Notes for course 571
+572,Course 572,Coursera,In Progress,71,Notes for course 572
+573,Course 573,Coursera,In Progress,29,Notes for course 573
+574,Course 574,Udemy,In Progress,13,Notes for course 574
+575,Course 575,Pluralsight,In Progress,61,Notes for course 575
+576,Course 576,Zenva,In Progress,55,Notes for course 576
+577,Course 577,Udemy,In Progress,86,Notes for course 577
+578,Course 578,edX,In Progress,62,
+579,Course 579,edX,In Progress,82,
+580,Course 580,Coursera,In Progress,9,
+581,Course 581,Zenva,In Progress,4,
+582,Course 582,Udemy,In Progress,17,Notes for course 582
+583,Course 583,Udemy,In Progress,3,Notes for course 583
+584,Course 584,edX,In Progress,82,
+585,Course 585,edX,In Progress,73,Notes for course 585
+586,Course 586,Coursera,In Progress,58,
+587,Course 587,Zenva,In Progress,84,Notes for course 587
+588,Course 588,Udemy,In Progress,28,
+589,Course 589,Udemy,In Progress,47,
+590,Course 590,Pluralsight,In Progress,98,
+591,Course 591,Pluralsight,Completed,100,Notes for course 591
+592,Course 592,Zenva,In Progress,32,Notes for course 592
+593,Course 593,edX,In Progress,59,
+594,Course 594,Coursera,In Progress,26,
+595,Course 595,Udemy,In Progress,1,Notes for course 595
+596,Course 596,Pluralsight,In Progress,41,Notes for course 596
+597,Course 597,Pluralsight,In Progress,99,
+598,Course 598,Pluralsight,In Progress,77,
+599,Course 599,Zenva,Not Started,0,
+600,Course 600,Udemy,In Progress,1,Notes for course 600
+601,Course 601,Udemy,In Progress,50,
+602,Course 602,Zenva,In Progress,87,Notes for course 602
+603,Course 603,Zenva,In Progress,50,Notes for course 603
+604,Course 604,Coursera,Not Started,0,Notes for course 604
+605,Course 605,edX,In Progress,28,
+606,Course 606,Coursera,In Progress,76,Notes for course 606
+607,Course 607,edX,In Progress,77,
+608,Course 608,Coursera,In Progress,98,Notes for course 608
+609,Course 609,Coursera,In Progress,61,
+610,Course 610,Udemy,In Progress,58,Notes for course 610
+611,Course 611,Coursera,In Progress,77,
+612,Course 612,Zenva,In Progress,58,
+613,Course 613,Coursera,In Progress,82,
+614,Course 614,edX,In Progress,33,Notes for course 614
+615,Course 615,Udemy,In Progress,61,Notes for course 615
+616,Course 616,Pluralsight,In Progress,89,Notes for course 616
+617,Course 617,edX,In Progress,61,
+618,Course 618,Zenva,In Progress,62,Notes for course 618
+619,Course 619,Udemy,In Progress,12,
+620,Course 620,Udemy,In Progress,28,
+621,Course 621,Pluralsight,Not Started,0,
+622,Course 622,Coursera,In Progress,35,
+623,Course 623,edX,In Progress,99,Notes for course 623
+624,Course 624,Coursera,In Progress,89,
+625,Course 625,Zenva,Not Started,0,Notes for course 625
+626,Course 626,Coursera,In Progress,4,Notes for course 626
+627,Course 627,Udemy,In Progress,68,Notes for course 627
+628,Course 628,Coursera,In Progress,42,
+629,Course 629,edX,In Progress,34,
+630,Course 630,edX,In Progress,34,Notes for course 630
+631,Course 631,Coursera,In Progress,42,Notes for course 631
+632,Course 632,Zenva,In Progress,91,Notes for course 632
+633,Course 633,Pluralsight,In Progress,19,Notes for course 633
+634,Course 634,Pluralsight,In Progress,21,
+635,Course 635,Coursera,In Progress,88,Notes for course 635
+636,Course 636,Pluralsight,In Progress,14,
+637,Course 637,Zenva,In Progress,20,Notes for course 637
+638,Course 638,Coursera,In Progress,33,Notes for course 638
+639,Course 639,Coursera,In Progress,89,Notes for course 639
+640,Course 640,Coursera,In Progress,84,Notes for course 640
+641,Course 641,Coursera,In Progress,45,Notes for course 641
+642,Course 642,Udemy,In Progress,50,Notes for course 642
+643,Course 643,Pluralsight,In Progress,69,Notes for course 643
+644,Course 644,Udemy,In Progress,18,Notes for course 644
+645,Course 645,Zenva,In Progress,71,
+646,Course 646,Zenva,In Progress,77,
+647,Course 647,Pluralsight,In Progress,5,Notes for course 647
+648,Course 648,Udemy,In Progress,59,
+649,Course 649,edX,In Progress,53,
+650,Course 650,edX,In Progress,12,
+651,Course 651,Zenva,In Progress,67,Notes for course 651
+652,Course 652,Coursera,In Progress,34,
+653,Course 653,Zenva,In Progress,99,
+654,Course 654,Udemy,In Progress,37,Notes for course 654
+655,Course 655,Udemy,In Progress,45,Notes for course 655
+656,Course 656,edX,In Progress,79,Notes for course 656
+657,Course 657,Udemy,In Progress,81,Notes for course 657
+658,Course 658,Zenva,In Progress,21,
+659,Course 659,Udemy,In Progress,45,
+660,Course 660,Udemy,In Progress,57,
+661,Course 661,Zenva,In Progress,24,
+662,Course 662,Zenva,In Progress,53,
+663,Course 663,Pluralsight,In Progress,5,
+664,Course 664,Zenva,In Progress,26,Notes for course 664
+665,Course 665,edX,In Progress,95,
+666,Course 666,Udemy,Not Started,0,
+667,Course 667,Udemy,In Progress,98,
+668,Course 668,Zenva,In Progress,29,Notes for course 668
+669,Course 669,Coursera,In Progress,18,Notes for course 669
+670,Course 670,edX,In Progress,46,
+671,Course 671,Udemy,In Progress,54,Notes for course 671
+672,Course 672,Zenva,In Progress,15,
+673,Course 673,Zenva,In Progress,38,
+674,Course 674,Coursera,In Progress,75,
+675,Course 675,Udemy,In Progress,30,
+676,Course 676,edX,In Progress,38,Notes for course 676
+677,Course 677,Udemy,In Progress,60,Notes for course 677
+678,Course 678,Zenva,In Progress,1,
+679,Course 679,Pluralsight,In Progress,93,
+680,Course 680,Udemy,In Progress,72,Notes for course 680
+681,Course 681,Udemy,In Progress,94,Notes for course 681
+682,Course 682,Pluralsight,In Progress,23,Notes for course 682
+683,Course 683,Pluralsight,In Progress,4,Notes for course 683
+684,Course 684,Coursera,In Progress,56,
+685,Course 685,Udemy,In Progress,20,
+686,Course 686,Coursera,In Progress,9,Notes for course 686
+687,Course 687,Udemy,In Progress,3,
+688,Course 688,Coursera,In Progress,68,
+689,Course 689,edX,In Progress,76,
+690,Course 690,Coursera,In Progress,90,Notes for course 690
+691,Course 691,Udemy,In Progress,39,Notes for course 691
+692,Course 692,Coursera,In Progress,60,Notes for course 692
+693,Course 693,Udemy,In Progress,71,
+694,Course 694,Udemy,In Progress,11,Notes for course 694
+695,Course 695,Pluralsight,In Progress,55,Notes for course 695
+696,Course 696,Zenva,In Progress,62,
+697,Course 697,Coursera,In Progress,88,Notes for course 697
+698,Course 698,Pluralsight,In Progress,78,
+699,Course 699,Coursera,In Progress,95,
+700,Course 700,Udemy,In Progress,45,
+701,Course 701,Coursera,In Progress,67,
+702,Course 702,Coursera,In Progress,81,Notes for course 702
+703,Course 703,Zenva,In Progress,91,
+704,Course 704,Coursera,In Progress,54,
+705,Course 705,Udemy,In Progress,36,
+706,Course 706,Udemy,In Progress,83,Notes for course 706
+707,Course 707,Zenva,In Progress,8,
+708,Course 708,Udemy,In Progress,57,Notes for course 708
+709,Course 709,Udemy,In Progress,84,
+710,Course 710,edX,In Progress,21,Notes for course 710
+711,Course 711,Zenva,In Progress,41,
+712,Course 712,Pluralsight,In Progress,61,Notes for course 712
+713,Course 713,Zenva,Completed,100,Notes for course 713
+714,Course 714,Pluralsight,In Progress,36,Notes for course 714
+715,Course 715,Coursera,In Progress,93,
+716,Course 716,Udemy,In Progress,49,Notes for course 716
+717,Course 717,Udemy,In Progress,45,
+718,Course 718,Coursera,In Progress,89,Notes for course 718
+719,Course 719,Coursera,In Progress,84,
+720,Course 720,Coursera,In Progress,94,Notes for course 720
+721,Course 721,edX,Completed,100,Notes for course 721
+722,Course 722,Coursera,In Progress,41,Notes for course 722
+723,Course 723,Coursera,In Progress,30,Notes for course 723
+724,Course 724,edX,In Progress,77,Notes for course 724
+725,Course 725,Coursera,In Progress,26,
+726,Course 726,edX,In Progress,78,
+727,Course 727,Zenva,In Progress,55,
+728,Course 728,edX,In Progress,53,Notes for course 728
+729,Course 729,Udemy,In Progress,24,
+730,Course 730,edX,In Progress,30,
+731,Course 731,Zenva,In Progress,76,
+732,Course 732,edX,In Progress,63,
+733,Course 733,Coursera,In Progress,41,Notes for course 733
+734,Course 734,Pluralsight,In Progress,94,
+735,Course 735,Udemy,In Progress,60,
+736,Course 736,Udemy,In Progress,71,
+737,Course 737,edX,In Progress,98,
+738,Course 738,Coursera,In Progress,73,Notes for course 738
+739,Course 739,Coursera,In Progress,95,Notes for course 739
+740,Course 740,edX,In Progress,43,Notes for course 740
+741,Course 741,Udemy,In Progress,28,Notes for course 741
+742,Course 742,Pluralsight,In Progress,44,
+743,Course 743,Coursera,In Progress,73,Notes for course 743
+744,Course 744,edX,In Progress,15,
+745,Course 745,edX,In Progress,39,
+746,Course 746,edX,In Progress,22,Notes for course 746
+747,Course 747,Coursera,In Progress,74,
+748,Course 748,Pluralsight,In Progress,33,
+749,Course 749,Coursera,In Progress,28,
+750,Course 750,Pluralsight,In Progress,60,Notes for course 750
+751,Course 751,Pluralsight,In Progress,57,Notes for course 751
+752,Course 752,edX,In Progress,30,Notes for course 752
+753,Course 753,Coursera,In Progress,65,Notes for course 753
+754,Course 754,Coursera,In Progress,88,
+755,Course 755,edX,In Progress,25,Notes for course 755
+756,Course 756,Udemy,In Progress,35,Notes for course 756
+757,Course 757,Coursera,In Progress,25,Notes for course 757
+758,Course 758,Zenva,In Progress,79,
+759,Course 759,Coursera,In Progress,34,Notes for course 759
+760,Course 760,Udemy,In Progress,78,Notes for course 760
+761,Course 761,Udemy,In Progress,57,Notes for course 761
+762,Course 762,Udemy,In Progress,82,
+763,Course 763,Udemy,In Progress,48,
+764,Course 764,Zenva,In Progress,6,
+765,Course 765,edX,In Progress,30,Notes for course 765
+766,Course 766,Zenva,In Progress,4,
+767,Course 767,Udemy,In Progress,20,
+768,Course 768,Zenva,In Progress,98,
+769,Course 769,Coursera,In Progress,66,Notes for course 769
+770,Course 770,Coursera,In Progress,43,
+771,Course 771,Zenva,In Progress,82,
+772,Course 772,Udemy,In Progress,92,
+773,Course 773,Pluralsight,In Progress,94,
+774,Course 774,Pluralsight,In Progress,83,
+775,Course 775,Zenva,In Progress,85,
+776,Course 776,Coursera,In Progress,20,Notes for course 776
+777,Course 777,edX,In Progress,54,
+778,Course 778,Pluralsight,In Progress,38,Notes for course 778
+779,Course 779,edX,In Progress,17,
+780,Course 780,edX,In Progress,89,Notes for course 780
+781,Course 781,Zenva,In Progress,12,
+782,Course 782,Udemy,In Progress,17,
+783,Course 783,Pluralsight,In Progress,51,
+784,Course 784,Pluralsight,In Progress,78,
+785,Course 785,Udemy,In Progress,39,
+786,Course 786,Zenva,In Progress,49,Notes for course 786
+787,Course 787,Udemy,In Progress,76,
+788,Course 788,Pluralsight,In Progress,80,
+789,Course 789,Zenva,In Progress,89,Notes for course 789
+790,Course 790,Zenva,In Progress,82,
+791,Course 791,Pluralsight,In Progress,70,
+792,Course 792,Coursera,In Progress,1,
+793,Course 793,Zenva,In Progress,99,
+794,Course 794,edX,In Progress,39,Notes for course 794
+795,Course 795,Udemy,In Progress,97,
+796,Course 796,Zenva,In Progress,6,
+797,Course 797,Zenva,In Progress,88,
+798,Course 798,edX,In Progress,59,Notes for course 798
+799,Course 799,edX,In Progress,7,
+800,Course 800,Zenva,In Progress,17,Notes for course 800
+801,Course 801,Pluralsight,In Progress,41,
+802,Course 802,edX,In Progress,10,Notes for course 802
+803,Course 803,Pluralsight,In Progress,7,Notes for course 803
+804,Course 804,Zenva,In Progress,46,
+805,Course 805,Pluralsight,In Progress,6,Notes for course 805
+806,Course 806,Zenva,In Progress,55,
+807,Course 807,edX,In Progress,74,Notes for course 807
+808,Course 808,Udemy,In Progress,83,Notes for course 808
+809,Course 809,Zenva,In Progress,96,
+810,Course 810,Pluralsight,In Progress,97,Notes for course 810
+811,Course 811,Udemy,In Progress,46,Notes for course 811
+812,Course 812,Udemy,In Progress,1,
+813,Course 813,Pluralsight,In Progress,1,Notes for course 813
+814,Course 814,Udemy,In Progress,61,
+815,Course 815,Pluralsight,In Progress,19,Notes for course 815
+816,Course 816,edX,In Progress,57,Notes for course 816
+817,Course 817,Pluralsight,In Progress,36,Notes for course 817
+818,Course 818,Pluralsight,In Progress,79,
+819,Course 819,Coursera,In Progress,47,Notes for course 819
+820,Course 820,Zenva,In Progress,23,
+821,Course 821,edX,In Progress,92,
+822,Course 822,edX,In Progress,52,
+823,Course 823,Zenva,In Progress,78,Notes for course 823
+824,Course 824,Pluralsight,In Progress,51,
+825,Course 825,Coursera,In Progress,74,Notes for course 825
+826,Course 826,Pluralsight,In Progress,33,
+827,Course 827,Udemy,In Progress,26,Notes for course 827
+828,Course 828,Udemy,In Progress,1,
+829,Course 829,Zenva,In Progress,66,Notes for course 829
+830,Course 830,Pluralsight,In Progress,34,Notes for course 830
+831,Course 831,Zenva,In Progress,30,Notes for course 831
+832,Course 832,Udemy,In Progress,25,
+833,Course 833,Zenva,In Progress,71,
+834,Course 834,edX,In Progress,91,
+835,Course 835,Pluralsight,In Progress,52,
+836,Course 836,edX,In Progress,19,Notes for course 836
+837,Course 837,Pluralsight,In Progress,81,
+838,Course 838,Coursera,In Progress,83,Notes for course 838
+839,Course 839,Zenva,In Progress,45,
+840,Course 840,Zenva,In Progress,80,Notes for course 840
+841,Course 841,Pluralsight,In Progress,32,
+842,Course 842,Pluralsight,In Progress,60,
+843,Course 843,edX,In Progress,1,Notes for course 843
+844,Course 844,edX,In Progress,7,Notes for course 844
+845,Course 845,Pluralsight,In Progress,51,
+846,Course 846,Udemy,In Progress,38,
+847,Course 847,Coursera,In Progress,91,Notes for course 847
+848,Course 848,Zenva,In Progress,19,
+849,Course 849,edX,In Progress,76,Notes for course 849
+850,Course 850,Pluralsight,In Progress,3,Notes for course 850
+851,Course 851,edX,In Progress,50,
+852,Course 852,Zenva,In Progress,29,Notes for course 852
+853,Course 853,Coursera,In Progress,8,Notes for course 853
+854,Course 854,Udemy,In Progress,35,Notes for course 854
+855,Course 855,Zenva,In Progress,4,
+856,Course 856,Udemy,In Progress,26,Notes for course 856
+857,Course 857,edX,In Progress,49,Notes for course 857
+858,Course 858,Coursera,In Progress,20,Notes for course 858
+859,Course 859,Udemy,In Progress,72,
+860,Course 860,Zenva,In Progress,81,Notes for course 860
+861,Course 861,Coursera,In Progress,10,
+862,Course 862,Coursera,In Progress,49,Notes for course 862
+863,Course 863,edX,In Progress,52,Notes for course 863
+864,Course 864,Udemy,In Progress,8,
+865,Course 865,Zenva,In Progress,58,
+866,Course 866,Coursera,In Progress,10,
+867,Course 867,Zenva,In Progress,68,
+868,Course 868,Udemy,In Progress,5,Notes for course 868
+869,Course 869,edX,In Progress,49,
+870,Course 870,edX,In Progress,19,Notes for course 870
+871,Course 871,Coursera,In Progress,90,Notes for course 871
+872,Course 872,edX,In Progress,33,
+873,Course 873,Zenva,In Progress,41,
+874,Course 874,Pluralsight,In Progress,12,Notes for course 874
+875,Course 875,Pluralsight,In Progress,28,Notes for course 875
+876,Course 876,Zenva,In Progress,98,Notes for course 876
+877,Course 877,Zenva,In Progress,63,
+878,Course 878,edX,In Progress,41,Notes for course 878
+879,Course 879,Udemy,In Progress,11,Notes for course 879
+880,Course 880,Zenva,In Progress,61,Notes for course 880
+881,Course 881,Zenva,In Progress,43,
+882,Course 882,Udemy,In Progress,22,
+883,Course 883,Coursera,In Progress,89,
+884,Course 884,Udemy,In Progress,23,
+885,Course 885,edX,In Progress,50,Notes for course 885
+886,Course 886,Pluralsight,In Progress,54,Notes for course 886
+887,Course 887,Udemy,In Progress,18,Notes for course 887
+888,Course 888,Udemy,In Progress,59,
+889,Course 889,edX,In Progress,84,
+890,Course 890,Pluralsight,In Progress,93,
+891,Course 891,Udemy,In Progress,6,
+892,Course 892,edX,In Progress,97,
+893,Course 893,Coursera,In Progress,45,
+894,Course 894,Coursera,In Progress,3,Notes for course 894
+895,Course 895,Pluralsight,In Progress,12,
+896,Course 896,Coursera,In Progress,68,Notes for course 896
+897,Course 897,Pluralsight,In Progress,74,
+898,Course 898,edX,In Progress,52,
+899,Course 899,Zenva,In Progress,69,Notes for course 899
+900,Course 900,Coursera,In Progress,13,
+901,Course 901,Udemy,In Progress,80,Notes for course 901
+902,Course 902,Coursera,In Progress,84,Notes for course 902
+903,Course 903,edX,In Progress,64,Notes for course 903
+904,Course 904,Zenva,In Progress,10,
+905,Course 905,Zenva,In Progress,66,Notes for course 905
+906,Course 906,Udemy,In Progress,48,
+907,Course 907,Coursera,In Progress,93,
+908,Course 908,Zenva,In Progress,42,Notes for course 908
+909,Course 909,Udemy,In Progress,28,Notes for course 909
+910,Course 910,Zenva,In Progress,65,Notes for course 910
+911,Course 911,Zenva,In Progress,51,Notes for course 911
+912,Course 912,Udemy,In Progress,70,
+913,Course 913,Pluralsight,In Progress,61,Notes for course 913
+914,Course 914,Zenva,In Progress,33,
+915,Course 915,Pluralsight,In Progress,64,Notes for course 915
+916,Course 916,Pluralsight,In Progress,90,
+917,Course 917,edX,In Progress,8,Notes for course 917
+918,Course 918,Pluralsight,In Progress,81,
+919,Course 919,Zenva,In Progress,19,
+920,Course 920,Coursera,In Progress,3,
+921,Course 921,Udemy,In Progress,51,Notes for course 921
+922,Course 922,Udemy,In Progress,27,
+923,Course 923,Udemy,In Progress,1,Notes for course 923
+924,Course 924,Zenva,In Progress,8,Notes for course 924
+925,Course 925,Udemy,In Progress,79,
+926,Course 926,Zenva,In Progress,37,Notes for course 926
+927,Course 927,Udemy,In Progress,51,Notes for course 927
+928,Course 928,Pluralsight,In Progress,52,Notes for course 928
+929,Course 929,edX,In Progress,67,Notes for course 929
+930,Course 930,Zenva,In Progress,76,
+931,Course 931,edX,In Progress,96,
+932,Course 932,Pluralsight,In Progress,95,
+933,Course 933,edX,In Progress,31,Notes for course 933
+934,Course 934,Udemy,In Progress,33,Notes for course 934
+935,Course 935,Udemy,In Progress,89,Notes for course 935
+936,Course 936,Coursera,In Progress,12,Notes for course 936
+937,Course 937,edX,In Progress,16,
+938,Course 938,Pluralsight,In Progress,29,
+939,Course 939,Pluralsight,In Progress,92,
+940,Course 940,Udemy,In Progress,24,
+941,Course 941,Udemy,In Progress,6,
+942,Course 942,Coursera,In Progress,85,
+943,Course 943,Zenva,In Progress,82,
+944,Course 944,Pluralsight,In Progress,1,Notes for course 944
+945,Course 945,Zenva,In Progress,95,Notes for course 945
+946,Course 946,edX,In Progress,2,
+947,Course 947,Pluralsight,In Progress,53,
+948,Course 948,Zenva,In Progress,7,Notes for course 948
+949,Course 949,edX,In Progress,31,Notes for course 949
+950,Course 950,Pluralsight,In Progress,75,Notes for course 950
+951,Course 951,edX,In Progress,43,
+952,Course 952,edX,In Progress,75,
+953,Course 953,Coursera,In Progress,42,Notes for course 953
+954,Course 954,edX,In Progress,98,
+955,Course 955,Udemy,In Progress,56,
+956,Course 956,Zenva,In Progress,93,
+957,Course 957,edX,In Progress,16,
+958,Course 958,Zenva,In Progress,38,Notes for course 958
+959,Course 959,Coursera,In Progress,39,
+960,Course 960,Zenva,In Progress,27,
+961,Course 961,Zenva,In Progress,66,Notes for course 961
+962,Course 962,Zenva,In Progress,27,Notes for course 962
+963,Course 963,Pluralsight,In Progress,87,Notes for course 963
+964,Course 964,Pluralsight,In Progress,48,
+965,Course 965,Pluralsight,In Progress,30,Notes for course 965
+966,Course 966,Udemy,In Progress,55,
+967,Course 967,Udemy,In Progress,9,
+968,Course 968,Udemy,In Progress,18,
+969,Course 969,Pluralsight,In Progress,81,
+970,Course 970,edX,In Progress,43,Notes for course 970
+971,Course 971,Pluralsight,In Progress,67,Notes for course 971
+972,Course 972,Coursera,In Progress,80,Notes for course 972
+973,Course 973,Coursera,In Progress,29,Notes for course 973
+974,Course 974,Coursera,In Progress,42,
+975,Course 975,Udemy,In Progress,49,Notes for course 975
+976,Course 976,Udemy,In Progress,69,
+977,Course 977,Udemy,In Progress,76,
+978,Course 978,Zenva,In Progress,83,
+979,Course 979,Coursera,In Progress,19,Notes for course 979
+980,Course 980,edX,In Progress,49,Notes for course 980
+981,Course 981,Udemy,In Progress,54,Notes for course 981
+982,Course 982,Udemy,In Progress,23,Notes for course 982
+983,Course 983,edX,In Progress,99,
+984,Course 984,Coursera,In Progress,12,
+985,Course 985,Zenva,In Progress,34,Notes for course 985
+986,Course 986,Coursera,In Progress,97,
+987,Course 987,Zenva,In Progress,11,Notes for course 987
+988,Course 988,Udemy,In Progress,98,
+989,Course 989,Coursera,In Progress,11,
+990,Course 990,edX,In Progress,76,
+991,Course 991,Pluralsight,In Progress,93,
+992,Course 992,Pluralsight,In Progress,94,
+993,Course 993,Pluralsight,In Progress,34,
+994,Course 994,Pluralsight,In Progress,31,Notes for course 994
+995,Course 995,Udemy,In Progress,69,
+996,Course 996,Udemy,In Progress,19,
+997,Course 997,Coursera,In Progress,61,
+998,Course 998,Coursera,In Progress,60,Notes for course 998
+999,Course 999,Coursera,In Progress,84,
+1000,Course 1000,edX,In Progress,79,Notes for course 1000
+1001,Course 1001,edX,In Progress,1,
+1002,Course 1002,Zenva,In Progress,81,
+1003,Course 1003,edX,In Progress,37,
+1004,Course 1004,Udemy,In Progress,93,
+1005,Course 1005,Udemy,In Progress,7,
+1006,Course 1006,Coursera,In Progress,43,
+1007,Course 1007,Pluralsight,In Progress,95,
+1008,Course 1008,Udemy,In Progress,57,
+1009,Course 1009,Udemy,In Progress,64,Notes for course 1009
+1010,Course 1010,Udemy,In Progress,98,
+1011,Course 1011,Pluralsight,In Progress,86,Notes for course 1011
+1012,Course 1012,Udemy,In Progress,48,
+1013,Course 1013,Pluralsight,In Progress,87,
+1014,Course 1014,Zenva,Not Started,0,Notes for course 1014
+1015,Course 1015,Udemy,In Progress,92,Notes for course 1015
+1016,Course 1016,Coursera,In Progress,86,
+1017,Course 1017,edX,In Progress,51,
+1018,Course 1018,Pluralsight,In Progress,65,
+1019,Course 1019,Pluralsight,In Progress,54,Notes for course 1019
+1020,Course 1020,Coursera,In Progress,48,
+1021,Course 1021,Zenva,In Progress,52,Notes for course 1021
+1022,Course 1022,edX,In Progress,27,
+1023,Course 1023,Udemy,In Progress,68,Notes for course 1023
+1024,Course 1024,Coursera,In Progress,66,Notes for course 1024
+1025,Course 1025,Coursera,In Progress,8,Notes for course 1025
+1026,Course 1026,Udemy,In Progress,33,
+1027,Course 1027,Zenva,In Progress,85,Notes for course 1027
+1028,Course 1028,Zenva,In Progress,69,
+1029,Course 1029,Zenva,In Progress,95,
+1030,Course 1030,Udemy,In Progress,68,
+1031,Course 1031,Coursera,In Progress,11,
+1032,Course 1032,Udemy,In Progress,15,
+1033,Course 1033,Pluralsight,In Progress,41,
+1034,Course 1034,Coursera,In Progress,24,Notes for course 1034
+1035,Course 1035,Zenva,In Progress,71,
+1036,Course 1036,Pluralsight,In Progress,90,Notes for course 1036
+1037,Course 1037,edX,In Progress,53,Notes for course 1037
+1038,Course 1038,Zenva,In Progress,94,Notes for course 1038
+1039,Course 1039,Pluralsight,In Progress,8,
+1040,Course 1040,Pluralsight,In Progress,52,
+1041,Course 1041,Udemy,In Progress,42,Notes for course 1041
+1042,Course 1042,Pluralsight,In Progress,90,
+1043,Course 1043,Zenva,In Progress,1,
+1044,Course 1044,Coursera,In Progress,41,
+1045,Course 1045,Zenva,In Progress,3,
+1046,Course 1046,Zenva,In Progress,63,Notes for course 1046
+1047,Course 1047,Pluralsight,In Progress,72,Notes for course 1047
+1048,Course 1048,Pluralsight,In Progress,82,Notes for course 1048
+1049,Course 1049,Zenva,In Progress,49,
+1050,Course 1050,Pluralsight,In Progress,2,Notes for course 1050
+1051,Course 1051,Zenva,In Progress,16,Notes for course 1051
+1052,Course 1052,Coursera,In Progress,74,
+1053,Course 1053,Udemy,In Progress,85,Notes for course 1053
+1054,Course 1054,Zenva,In Progress,15,Notes for course 1054
+1055,Course 1055,Zenva,In Progress,60,
+1056,Course 1056,Coursera,In Progress,91,Notes for course 1056
+1057,Course 1057,Udemy,In Progress,44,
+1058,Course 1058,Pluralsight,In Progress,41,
+1059,Course 1059,Coursera,In Progress,34,Notes for course 1059
+1060,Course 1060,Udemy,In Progress,69,
+1061,Course 1061,Pluralsight,In Progress,11,
+1062,Course 1062,Pluralsight,In Progress,84,Notes for course 1062
+1063,Course 1063,edX,In Progress,86,
+1064,Course 1064,Zenva,In Progress,94,
+1065,Course 1065,Zenva,In Progress,29,
+1066,Course 1066,Udemy,In Progress,27,Notes for course 1066
+1067,Course 1067,Udemy,In Progress,82,Notes for course 1067
+1068,Course 1068,Pluralsight,In Progress,99,Notes for course 1068
+1069,Course 1069,Pluralsight,In Progress,97,
+1070,Course 1070,Udemy,In Progress,97,Notes for course 1070
+1071,Course 1071,Zenva,In Progress,14,Notes for course 1071
+1072,Course 1072,Zenva,In Progress,99,
+1073,Course 1073,Zenva,In Progress,16,
+1074,Course 1074,Zenva,In Progress,75,
+1075,Course 1075,Coursera,In Progress,32,Notes for course 1075
+1076,Course 1076,edX,In Progress,72,Notes for course 1076
+1077,Course 1077,Udemy,In Progress,31,Notes for course 1077
+1078,Course 1078,edX,In Progress,65,
+1079,Course 1079,Coursera,In Progress,3,Notes for course 1079
+1080,Course 1080,Pluralsight,In Progress,45,
+1081,Course 1081,Zenva,In Progress,49,
+1082,Course 1082,Coursera,In Progress,21,
+1083,Course 1083,Zenva,In Progress,51,Notes for course 1083
+1084,Course 1084,Pluralsight,Completed,100,
+1085,Course 1085,Zenva,In Progress,21,Notes for course 1085
+1086,Course 1086,Coursera,In Progress,8,Notes for course 1086
+1087,Course 1087,Udemy,In Progress,39,
+1088,Course 1088,Pluralsight,In Progress,54,
+1089,Course 1089,Coursera,In Progress,52,
+1090,Course 1090,Coursera,In Progress,34,Notes for course 1090
+1091,Course 1091,Udemy,In Progress,46,Notes for course 1091
+1092,Course 1092,edX,In Progress,97,Notes for course 1092
+1093,Course 1093,Coursera,In Progress,92,Notes for course 1093
+1094,Course 1094,edX,In Progress,17,Notes for course 1094
+1095,Course 1095,edX,In Progress,3,
+1096,Course 1096,Pluralsight,In Progress,92,
+1097,Course 1097,Udemy,In Progress,28,
+1098,Course 1098,Pluralsight,In Progress,81,Notes for course 1098
+1099,Course 1099,edX,In Progress,91,
+1100,Course 1100,Udemy,In Progress,27,
+1101,Course 1101,Coursera,In Progress,98,
+1102,Course 1102,edX,In Progress,49,
+1103,Course 1103,edX,In Progress,32,Notes for course 1103
+1104,Course 1104,Udemy,In Progress,12,Notes for course 1104
+1105,Course 1105,Pluralsight,In Progress,84,
+1106,Course 1106,Pluralsight,In Progress,1,
+1107,Course 1107,Zenva,In Progress,98,
+1108,Course 1108,Zenva,In Progress,41,
+1109,Course 1109,Udemy,In Progress,17,Notes for course 1109
+1110,Course 1110,Pluralsight,In Progress,20,Notes for course 1110
+1111,Course 1111,Udemy,In Progress,49,
+1112,Course 1112,Pluralsight,In Progress,14,Notes for course 1112
+1113,Course 1113,Coursera,In Progress,70,
+1114,Course 1114,Udemy,In Progress,95,
+1115,Course 1115,Pluralsight,In Progress,27,Notes for course 1115
+1116,Course 1116,Pluralsight,In Progress,56,
+1117,Course 1117,Udemy,In Progress,35,Notes for course 1117
+1118,Course 1118,Zenva,In Progress,32,
+1119,Course 1119,Udemy,In Progress,34,Notes for course 1119
+1120,Course 1120,Pluralsight,In Progress,12,Notes for course 1120
+1121,Course 1121,Pluralsight,In Progress,92,
+1122,Course 1122,edX,In Progress,1,Notes for course 1122
+1123,Course 1123,Udemy,In Progress,1,
+1124,Course 1124,edX,In Progress,83,Notes for course 1124
+1125,Course 1125,Pluralsight,In Progress,30,Notes for course 1125
+1126,Course 1126,Coursera,In Progress,77,
+1127,Course 1127,Zenva,In Progress,38,Notes for course 1127
+1128,Course 1128,Pluralsight,In Progress,41,Notes for course 1128
+1129,Course 1129,Zenva,In Progress,76,Notes for course 1129
+1130,Course 1130,edX,In Progress,60,Notes for course 1130
+1131,Course 1131,Pluralsight,In Progress,21,
+1132,Course 1132,Zenva,In Progress,47,Notes for course 1132
+1133,Course 1133,Zenva,In Progress,56,
+1134,Course 1134,Pluralsight,In Progress,39,
+1135,Course 1135,Pluralsight,In Progress,91,
+1136,Course 1136,Zenva,In Progress,75,
+1137,Course 1137,Coursera,In Progress,46,Notes for course 1137
+1138,Course 1138,Zenva,In Progress,34,Notes for course 1138
+1139,Course 1139,Zenva,In Progress,58,Notes for course 1139
+1140,Course 1140,Udemy,In Progress,3,Notes for course 1140
+1141,Course 1141,Pluralsight,In Progress,72,
+1142,Course 1142,edX,In Progress,78,
+1143,Course 1143,Coursera,In Progress,7,Notes for course 1143
+1144,Course 1144,Zenva,In Progress,32,
+1145,Course 1145,Udemy,In Progress,57,Notes for course 1145
+1146,Course 1146,Coursera,In Progress,22,Notes for course 1146
+1147,Course 1147,edX,In Progress,1,Notes for course 1147
+1148,Course 1148,Coursera,In Progress,45,Notes for course 1148
+1149,Course 1149,Zenva,In Progress,89,Notes for course 1149
+1150,Course 1150,Udemy,In Progress,34,
+1151,Course 1151,Pluralsight,In Progress,44,
+1152,Course 1152,edX,In Progress,36,
+1153,Course 1153,Udemy,In Progress,74,Notes for course 1153
+1154,Course 1154,Pluralsight,In Progress,58,Notes for course 1154
+1155,Course 1155,Udemy,In Progress,32,Notes for course 1155
+1156,Course 1156,edX,In Progress,24,Notes for course 1156
+1157,Course 1157,edX,In Progress,42,
+1158,Course 1158,Coursera,In Progress,55,Notes for course 1158
+1159,Course 1159,Udemy,In Progress,12,
+1160,Course 1160,Coursera,In Progress,53,
+1161,Course 1161,Coursera,In Progress,91,Notes for course 1161
+1162,Course 1162,edX,In Progress,2,
+1163,Course 1163,Udemy,In Progress,78,
+1164,Course 1164,Zenva,In Progress,7,
+1165,Course 1165,Pluralsight,In Progress,86,
+1166,Course 1166,Coursera,In Progress,48,Notes for course 1166
+1167,Course 1167,Zenva,In Progress,75,Notes for course 1167
+1168,Course 1168,Coursera,In Progress,30,
+1169,Course 1169,Pluralsight,In Progress,4,Notes for course 1169
+1170,Course 1170,edX,Completed,100,Notes for course 1170
+1171,Course 1171,Udemy,In Progress,39,Notes for course 1171
+1172,Course 1172,edX,In Progress,52,Notes for course 1172
+1173,Course 1173,Coursera,In Progress,40,
+1174,Course 1174,Coursera,In Progress,26,Notes for course 1174
+1175,Course 1175,Coursera,In Progress,39,Notes for course 1175
+1176,Course 1176,Zenva,In Progress,97,Notes for course 1176
+1177,Course 1177,Zenva,In Progress,10,Notes for course 1177
+1178,Course 1178,edX,In Progress,18,Notes for course 1178
+1179,Course 1179,Zenva,In Progress,69,
+1180,Course 1180,Pluralsight,In Progress,3,Notes for course 1180
+1181,Course 1181,edX,In Progress,20,
+1182,Course 1182,edX,In Progress,7,Notes for course 1182
+1183,Course 1183,edX,In Progress,32,Notes for course 1183
+1184,Course 1184,Zenva,In Progress,37,Notes for course 1184
+1185,Course 1185,Udemy,In Progress,78,Notes for course 1185
+1186,Course 1186,Coursera,In Progress,66,Notes for course 1186
+1187,Course 1187,Pluralsight,In Progress,63,
+1188,Course 1188,edX,In Progress,47,
+1189,Course 1189,Pluralsight,In Progress,1,
+1190,Course 1190,edX,In Progress,37,Notes for course 1190
+1191,Course 1191,Udemy,In Progress,37,Notes for course 1191
+1192,Course 1192,edX,In Progress,42,Notes for course 1192
+1193,Course 1193,Pluralsight,In Progress,27,Notes for course 1193
+1194,Course 1194,Coursera,In Progress,37,Notes for course 1194
+1195,Course 1195,Pluralsight,In Progress,40,Notes for course 1195
+1196,Course 1196,Pluralsight,In Progress,22,
+1197,Course 1197,Pluralsight,In Progress,99,Notes for course 1197
+1198,Course 1198,Udemy,In Progress,2,
+1199,Course 1199,Pluralsight,In Progress,75,Notes for course 1199
+1200,Course 1200,edX,In Progress,28,Notes for course 1200
+1201,Course 1201,Coursera,In Progress,97,
+1202,Course 1202,Pluralsight,In Progress,40,Notes for course 1202
+1203,Course 1203,Udemy,In Progress,99,Notes for course 1203
+1204,Course 1204,Udemy,In Progress,40,Notes for course 1204
+1205,Course 1205,Pluralsight,In Progress,78,Notes for course 1205
+1206,Course 1206,Udemy,In Progress,61,
+1207,Course 1207,Coursera,In Progress,89,Notes for course 1207
+1208,Course 1208,Zenva,In Progress,31,Notes for course 1208
+1209,Course 1209,Coursera,In Progress,91,Notes for course 1209
+1210,Course 1210,Coursera,In Progress,18,Notes for course 1210
+1211,Course 1211,Zenva,In Progress,54,
+1212,Course 1212,edX,In Progress,46,
+1213,Course 1213,Coursera,In Progress,79,
+1214,Course 1214,Udemy,In Progress,60,Notes for course 1214
+1215,Course 1215,Udemy,In Progress,5,
+1216,Course 1216,Udemy,In Progress,95,
+1217,Course 1217,Zenva,In Progress,22,
+1218,Course 1218,Zenva,In Progress,29,
+1219,Course 1219,Zenva,In Progress,38,
+1220,Course 1220,Udemy,In Progress,62,
+1221,Course 1221,edX,In Progress,20,Notes for course 1221
+1222,Course 1222,Pluralsight,In Progress,6,
+1223,Course 1223,edX,In Progress,4,
+1224,Course 1224,Udemy,In Progress,14,
+1225,Course 1225,Udemy,In Progress,64,
+1226,Course 1226,Coursera,In Progress,4,Notes for course 1226
+1227,Course 1227,Pluralsight,In Progress,33,
+1228,Course 1228,Zenva,In Progress,16,Notes for course 1228
+1229,Course 1229,Pluralsight,In Progress,84,Notes for course 1229
+1230,Course 1230,Pluralsight,In Progress,7,
+1231,Course 1231,Udemy,In Progress,59,
+1232,Course 1232,Pluralsight,In Progress,29,Notes for course 1232
+1233,Course 1233,Pluralsight,In Progress,13,Notes for course 1233
+1234,Course 1234,Pluralsight,In Progress,9,Notes for course 1234
+1235,Course 1235,edX,In Progress,33,Notes for course 1235
+1236,Course 1236,Pluralsight,Not Started,0,
+1237,Course 1237,Pluralsight,In Progress,11,
+1238,Course 1238,Pluralsight,In Progress,89,
+1239,Course 1239,Zenva,In Progress,50,
+1240,Course 1240,Zenva,In Progress,27,
+1241,Course 1241,edX,In Progress,56,Notes for course 1241
+1242,Course 1242,Udemy,In Progress,32,Notes for course 1242
+1243,Course 1243,Coursera,In Progress,81,Notes for course 1243
+1244,Course 1244,Zenva,In Progress,76,Notes for course 1244
+1245,Course 1245,Udemy,In Progress,25,Notes for course 1245
+1246,Course 1246,Zenva,In Progress,86,
+1247,Course 1247,Coursera,In Progress,9,
+1248,Course 1248,Zenva,In Progress,19,Notes for course 1248
+1249,Course 1249,Zenva,In Progress,38,Notes for course 1249
+1250,Course 1250,Zenva,Completed,100,Notes for course 1250
+1251,Course 1251,Pluralsight,In Progress,66,
+1252,Course 1252,Coursera,In Progress,33,
+1253,Course 1253,Coursera,In Progress,53,
+1254,Course 1254,Zenva,In Progress,4,Notes for course 1254
+1255,Course 1255,Zenva,In Progress,80,Notes for course 1255
+1256,Course 1256,Zenva,In Progress,55,Notes for course 1256
+1257,Course 1257,Coursera,In Progress,41,Notes for course 1257
+1258,Course 1258,Udemy,In Progress,65,Notes for course 1258
+1259,Course 1259,Coursera,In Progress,3,
+1260,Course 1260,edX,In Progress,21,
+1261,Course 1261,edX,In Progress,27,Notes for course 1261
+1262,Course 1262,Zenva,In Progress,6,Notes for course 1262
+1263,Course 1263,Udemy,In Progress,36,
+1264,Course 1264,Coursera,In Progress,99,
+1265,Course 1265,Pluralsight,In Progress,5,
+1266,Course 1266,Coursera,In Progress,21,
+1267,Course 1267,Udemy,In Progress,17,Notes for course 1267
+1268,Course 1268,Zenva,In Progress,3,Notes for course 1268
+1269,Course 1269,Udemy,In Progress,68,Notes for course 1269
+1270,Course 1270,Udemy,In Progress,33,
+1271,Course 1271,Udemy,Completed,100,Notes for course 1271
+1272,Course 1272,Coursera,In Progress,10,
+1273,Course 1273,Coursera,In Progress,91,Notes for course 1273
+1274,Course 1274,Udemy,In Progress,18,
+1275,Course 1275,Udemy,In Progress,86,Notes for course 1275
+1276,Course 1276,Coursera,In Progress,86,Notes for course 1276
+1277,Course 1277,Zenva,In Progress,78,Notes for course 1277
+1278,Course 1278,edX,In Progress,14,
+1279,Course 1279,Pluralsight,In Progress,39,
+1280,Course 1280,Udemy,In Progress,51,
+1281,Course 1281,Pluralsight,In Progress,97,Notes for course 1281
+1282,Course 1282,edX,In Progress,94,Notes for course 1282
+1283,Course 1283,edX,In Progress,76,
+1284,Course 1284,Coursera,In Progress,79,
+1285,Course 1285,Coursera,In Progress,31,
+1286,Course 1286,Zenva,In Progress,99,
+1287,Course 1287,Coursera,In Progress,27,Notes for course 1287
+1288,Course 1288,Udemy,In Progress,61,Notes for course 1288
+1289,Course 1289,edX,In Progress,51,
+1290,Course 1290,edX,In Progress,61,Notes for course 1290
+1291,Course 1291,Coursera,In Progress,80,Notes for course 1291
+1292,Course 1292,edX,In Progress,13,Notes for course 1292
+1293,Course 1293,Zenva,In Progress,48,
+1294,Course 1294,Coursera,In Progress,10,Notes for course 1294
+1295,Course 1295,Coursera,In Progress,14,Notes for course 1295
+1296,Course 1296,Udemy,In Progress,61,
+1297,Course 1297,Zenva,In Progress,41,
+1298,Course 1298,Udemy,In Progress,75,Notes for course 1298
+1299,Course 1299,Zenva,In Progress,40,Notes for course 1299
+1300,Course 1300,edX,In Progress,93,Notes for course 1300
+1301,Course 1301,Zenva,In Progress,25,Notes for course 1301
+1302,Course 1302,Udemy,In Progress,95,
+1303,Course 1303,Pluralsight,In Progress,2,
+1304,Course 1304,Pluralsight,In Progress,66,
+1305,Course 1305,Pluralsight,In Progress,54,
+1306,Course 1306,Pluralsight,In Progress,28,
+1307,Course 1307,Coursera,In Progress,74,Notes for course 1307
+1308,Course 1308,Zenva,In Progress,23,Notes for course 1308
+1309,Course 1309,Pluralsight,In Progress,37,Notes for course 1309
+1310,Course 1310,Udemy,In Progress,46,
+1311,Course 1311,Pluralsight,In Progress,73,
+1312,Course 1312,Udemy,In Progress,40,Notes for course 1312
+1313,Course 1313,Zenva,In Progress,27,Notes for course 1313
+1314,Course 1314,edX,In Progress,71,
+1315,Course 1315,Udemy,In Progress,31,Notes for course 1315
+1316,Course 1316,Zenva,In Progress,85,Notes for course 1316
+1317,Course 1317,Zenva,In Progress,37,Notes for course 1317
+1318,Course 1318,Coursera,In Progress,5,Notes for course 1318
+1319,Course 1319,Zenva,In Progress,75,
+1320,Course 1320,Pluralsight,In Progress,8,
+1321,Course 1321,Coursera,In Progress,58,
+1322,Course 1322,Zenva,In Progress,15,
+1323,Course 1323,Pluralsight,In Progress,53,
+1324,Course 1324,Udemy,In Progress,15,
+1325,Course 1325,Udemy,In Progress,10,
+1326,Course 1326,Udemy,In Progress,10,
+1327,Course 1327,Pluralsight,In Progress,99,Notes for course 1327
+1328,Course 1328,Coursera,In Progress,10,
+1329,Course 1329,Pluralsight,In Progress,36,Notes for course 1329
+1330,Course 1330,Pluralsight,In Progress,86,
+1331,Course 1331,Coursera,In Progress,29,
+1332,Course 1332,Zenva,In Progress,76,
+1333,Course 1333,Coursera,In Progress,9,
+1334,Course 1334,Pluralsight,In Progress,71,
+1335,Course 1335,Coursera,In Progress,62,
+1336,Course 1336,Coursera,In Progress,40,
+1337,Course 1337,Pluralsight,In Progress,59,Notes for course 1337
+1338,Course 1338,Zenva,In Progress,66,
+1339,Course 1339,Udemy,In Progress,10,Notes for course 1339
+1340,Course 1340,Coursera,In Progress,39,Notes for course 1340
+1341,Course 1341,edX,In Progress,99,
+1342,Course 1342,Udemy,In Progress,68,
+1343,Course 1343,edX,In Progress,82,Notes for course 1343
+1344,Course 1344,edX,In Progress,42,
+1345,Course 1345,Pluralsight,In Progress,85,
+1346,Course 1346,Coursera,In Progress,93,Notes for course 1346
+1347,Course 1347,Coursera,In Progress,47,Notes for course 1347
+1348,Course 1348,Pluralsight,In Progress,60,
+1349,Course 1349,Pluralsight,In Progress,80,
+1350,Course 1350,edX,In Progress,9,
+1351,Course 1351,edX,In Progress,40,
+1352,Course 1352,Coursera,In Progress,71,Notes for course 1352
+1353,Course 1353,Udemy,In Progress,94,
+1354,Course 1354,Pluralsight,In Progress,26,
+1355,Course 1355,edX,In Progress,52,
+1356,Course 1356,Coursera,In Progress,37,Notes for course 1356
+1357,Course 1357,Pluralsight,In Progress,85,
+1358,Course 1358,Udemy,In Progress,85,
+1359,Course 1359,Udemy,In Progress,39,Notes for course 1359
+1360,Course 1360,Pluralsight,In Progress,60,
+1361,Course 1361,Udemy,In Progress,95,Notes for course 1361
+1362,Course 1362,Udemy,In Progress,17,Notes for course 1362
+1363,Course 1363,Coursera,In Progress,55,Notes for course 1363
+1364,Course 1364,Coursera,In Progress,15,
+1365,Course 1365,Zenva,In Progress,60,Notes for course 1365
+1366,Course 1366,edX,In Progress,23,Notes for course 1366
+1367,Course 1367,Pluralsight,In Progress,46,
+1368,Course 1368,Zenva,In Progress,23,
+1369,Course 1369,Zenva,In Progress,66,Notes for course 1369
+1370,Course 1370,Coursera,In Progress,59,
+1371,Course 1371,Pluralsight,In Progress,14,
+1372,Course 1372,edX,In Progress,35,Notes for course 1372
+1373,Course 1373,Zenva,In Progress,41,Notes for course 1373
+1374,Course 1374,Udemy,In Progress,90,
+1375,Course 1375,edX,In Progress,69,Notes for course 1375
+1376,Course 1376,Zenva,In Progress,18,
+1377,Course 1377,edX,In Progress,56,Notes for course 1377
+1378,Course 1378,Udemy,In Progress,60,Notes for course 1378
+1379,Course 1379,Udemy,In Progress,48,Notes for course 1379
+1380,Course 1380,Udemy,In Progress,81,
+1381,Course 1381,Pluralsight,In Progress,78,
+1382,Course 1382,Udemy,In Progress,23,Notes for course 1382
+1383,Course 1383,edX,In Progress,63,
+1384,Course 1384,Coursera,In Progress,64,Notes for course 1384
+1385,Course 1385,edX,In Progress,29,Notes for course 1385
+1386,Course 1386,Udemy,In Progress,15,
+1387,Course 1387,edX,In Progress,97,Notes for course 1387
+1388,Course 1388,Pluralsight,In Progress,52,
+1389,Course 1389,Udemy,In Progress,23,Notes for course 1389
+1390,Course 1390,Udemy,In Progress,75,Notes for course 1390
+1391,Course 1391,Udemy,In Progress,40,
+1392,Course 1392,Pluralsight,In Progress,80,
+1393,Course 1393,Pluralsight,In Progress,96,
+1394,Course 1394,edX,In Progress,88,Notes for course 1394
+1395,Course 1395,edX,In Progress,62,
+1396,Course 1396,Pluralsight,In Progress,70,Notes for course 1396
+1397,Course 1397,Coursera,In Progress,92,Notes for course 1397
+1398,Course 1398,edX,In Progress,39,
+1399,Course 1399,Coursera,In Progress,98,Notes for course 1399
+1400,Course 1400,Udemy,In Progress,25,Notes for course 1400
+1401,Course 1401,Udemy,In Progress,19,Notes for course 1401
+1402,Course 1402,Coursera,In Progress,57,Notes for course 1402
+1403,Course 1403,Zenva,In Progress,8,Notes for course 1403
+1404,Course 1404,Udemy,In Progress,50,Notes for course 1404
+1405,Course 1405,edX,In Progress,17,
+1406,Course 1406,Zenva,In Progress,49,
+1407,Course 1407,Coursera,In Progress,48,Notes for course 1407
+1408,Course 1408,Udemy,In Progress,9,Notes for course 1408
+1409,Course 1409,Zenva,In Progress,50,Notes for course 1409
+1410,Course 1410,Pluralsight,In Progress,16,
+1411,Course 1411,Coursera,In Progress,90,
+1412,Course 1412,Coursera,In Progress,82,Notes for course 1412
+1413,Course 1413,edX,In Progress,90,Notes for course 1413
+1414,Course 1414,edX,In Progress,56,Notes for course 1414
+1415,Course 1415,Pluralsight,In Progress,33,Notes for course 1415
+1416,Course 1416,edX,In Progress,13,Notes for course 1416
+1417,Course 1417,edX,In Progress,87,
+1418,Course 1418,Udemy,In Progress,42,
+1419,Course 1419,Pluralsight,In Progress,78,
+1420,Course 1420,Zenva,In Progress,74,Notes for course 1420
+1421,Course 1421,Pluralsight,In Progress,51,
+1422,Course 1422,Pluralsight,In Progress,43,Notes for course 1422
+1423,Course 1423,edX,In Progress,54,
+1424,Course 1424,Udemy,In Progress,13,Notes for course 1424
+1425,Course 1425,Udemy,In Progress,46,Notes for course 1425
+1426,Course 1426,Udemy,In Progress,63,Notes for course 1426
+1427,Course 1427,Udemy,In Progress,13,Notes for course 1427
+1428,Course 1428,edX,In Progress,20,
+1429,Course 1429,edX,In Progress,72,Notes for course 1429
+1430,Course 1430,Coursera,In Progress,45,
+1431,Course 1431,Coursera,In Progress,77,
+1432,Course 1432,Udemy,In Progress,86,Notes for course 1432
+1433,Course 1433,edX,In Progress,70,
+1434,Course 1434,edX,In Progress,3,
+1435,Course 1435,Zenva,In Progress,9,
+1436,Course 1436,Pluralsight,In Progress,85,Notes for course 1436
+1437,Course 1437,Pluralsight,In Progress,66,Notes for course 1437
+1438,Course 1438,Zenva,In Progress,28,
+1439,Course 1439,Pluralsight,In Progress,16,Notes for course 1439
+1440,Course 1440,Pluralsight,In Progress,16,Notes for course 1440
+1441,Course 1441,edX,In Progress,46,
+1442,Course 1442,Zenva,In Progress,16,Notes for course 1442
+1443,Course 1443,Pluralsight,In Progress,42,Notes for course 1443
+1444,Course 1444,Coursera,In Progress,32,Notes for course 1444
+1445,Course 1445,Pluralsight,In Progress,10,
+1446,Course 1446,edX,In Progress,38,
+1447,Course 1447,edX,In Progress,91,Notes for course 1447
+1448,Course 1448,edX,In Progress,1,Notes for course 1448
+1449,Course 1449,Coursera,In Progress,92,
+1450,Course 1450,Zenva,In Progress,70,Notes for course 1450
+1451,Course 1451,Udemy,In Progress,29,Notes for course 1451
+1452,Course 1452,Udemy,In Progress,42,
+1453,Course 1453,Zenva,In Progress,10,Notes for course 1453
+1454,Course 1454,Zenva,In Progress,24,
+1455,Course 1455,Pluralsight,In Progress,74,
+1456,Course 1456,Pluralsight,In Progress,1,
+1457,Course 1457,Pluralsight,In Progress,97,Notes for course 1457
+1458,Course 1458,Zenva,In Progress,16,Notes for course 1458
+1459,Course 1459,Coursera,In Progress,85,
+1460,Course 1460,Pluralsight,In Progress,6,
+1461,Course 1461,Zenva,In Progress,43,Notes for course 1461
+1462,Course 1462,Udemy,In Progress,71,Notes for course 1462
+1463,Course 1463,Coursera,In Progress,9,Notes for course 1463
+1464,Course 1464,Pluralsight,In Progress,8,
+1465,Course 1465,Coursera,In Progress,72,Notes for course 1465
+1466,Course 1466,Coursera,In Progress,95,
+1467,Course 1467,Zenva,In Progress,54,
+1468,Course 1468,Coursera,In Progress,59,
+1469,Course 1469,Pluralsight,In Progress,6,
+1470,Course 1470,Zenva,In Progress,40,Notes for course 1470
+1471,Course 1471,Pluralsight,In Progress,48,Notes for course 1471
+1472,Course 1472,edX,In Progress,61,
+1473,Course 1473,Zenva,In Progress,26,
+1474,Course 1474,edX,In Progress,90,Notes for course 1474
+1475,Course 1475,Coursera,In Progress,86,Notes for course 1475
+1476,Course 1476,Coursera,In Progress,82,
+1477,Course 1477,Udemy,In Progress,90,Notes for course 1477
+1478,Course 1478,Zenva,In Progress,40,Notes for course 1478
+1479,Course 1479,Udemy,In Progress,9,
+1480,Course 1480,Pluralsight,In Progress,89,Notes for course 1480
+1481,Course 1481,Zenva,In Progress,49,Notes for course 1481
+1482,Course 1482,Coursera,In Progress,62,
+1483,Course 1483,edX,In Progress,89,
+1484,Course 1484,Coursera,In Progress,5,
+1485,Course 1485,Coursera,In Progress,53,Notes for course 1485
+1486,Course 1486,edX,In Progress,46,Notes for course 1486
+1487,Course 1487,Udemy,In Progress,52,Notes for course 1487
+1488,Course 1488,edX,In Progress,9,
+1489,Course 1489,Coursera,In Progress,84,
+1490,Course 1490,Udemy,In Progress,25,Notes for course 1490
+1491,Course 1491,edX,In Progress,89,Notes for course 1491
+1492,Course 1492,edX,In Progress,74,
+1493,Course 1493,edX,In Progress,13,Notes for course 1493
+1494,Course 1494,Udemy,In Progress,96,Notes for course 1494
+1495,Course 1495,Coursera,In Progress,6,
+1496,Course 1496,Coursera,In Progress,91,
+1497,Course 1497,Zenva,In Progress,85,
+1498,Course 1498,Pluralsight,In Progress,44,Notes for course 1498
+1499,Course 1499,Udemy,In Progress,63,
+1500,Course 1500,Coursera,In Progress,10,
