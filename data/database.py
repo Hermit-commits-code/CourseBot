@@ -1,15 +1,17 @@
 import sqlite3
 import csv
+import os
 
 class Database:
-    def __init__(self):
-        self.conn = sqlite3.connect(":memory:")
+    def __init__(self, db_path="courses.db"):
+        self.db_path = db_path
+        self.conn = sqlite3.connect(self.db_path)
         self.cursor = self.conn.cursor()
         self.create_table()
 
     def create_table(self):
         self.cursor.execute('''
-            CREATE TABLE courses (
+            CREATE TABLE IF NOT EXISTS courses (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
                 title TEXT NOT NULL,
                 platform TEXT,
