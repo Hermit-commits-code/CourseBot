@@ -26,9 +26,9 @@ A Python desktop app for tracking 1500 courses from Udemy, Zenva, etc., designed
 
 ## Phase 4: Persistent Database
 
-- [ ] Modify the database setup to use a file-based SQLite database instead of in-memory.
-- [ ] Implement database connection management for persistence.
-- [ ] Update existing features to work with the persistent database.
+- [x]Modify the database setup to use a file-based SQLite database instead of in-memory.
+- [x]Implement database connection management for persistence.
+- [x]Update existing features to work with the persistent database.
 
 ## Phase 5: Modern Design and Polish
 
@@ -38,16 +38,12 @@ A Python desktop app for tracking 1500 courses from Udemy, Zenva, etc., designed
 
 ## Phase 6: Advanced Features
 
-- [ ] User Authentication and Profiles
+- [x] User Authentication and Profiles
 
   - Implement user authentication to allow multiple users to track their courses separately.
   - Add user profiles with customizable settings.
 
-- [ ] Cloud Sync
-
-  - Integrate cloud storage options (e.g., Google Drive, Dropbox) for backing up and syncing the database across devices.
-
-- [ ] Advanced Reporting
+- [x] Advanced Reporting
 
   - Generate detailed reports on course progress, time spent, and completion rates.
   - Include graphical representations (charts and graphs) of progress and statistics.
