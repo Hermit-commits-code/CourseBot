@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.2](https://github.com/Hermit-commits-code/CourseBot/compare/v0.1.1...v0.1.2) (2025-03-18)
+
+
+### Features
+
+* **auth:** add user registration and login functionality ([5d8b35a](https://github.com/Hermit-commits-code/CourseBot/commit/5d8b35aa951816fec199712ca591977c296b4c08))
+
 ### [0.1.1](https://github.com/Hermit-commits-code/CourseBot/compare/v1.0.0...v0.1.1) (2025-03-18)
 
 
