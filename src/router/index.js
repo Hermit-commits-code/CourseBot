@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
 
 import AddCourse from '../components/AddCourse.vue';
+import UpdateProgress from '../components/UpdateProgress.vue';
 import UserDashboard from '../components/UserDashboard.vue';
 import UserLogin from '../components/UserLogin.vue';
 import UserRegister from '../components/UserRegister.vue';
@@ -10,6 +11,7 @@ const routes = [
   { path: '/register', component: UserRegister },
   { path: '/dashboard', component: UserDashboard },
   { path: '/add-course', component: AddCourse },
+  { path: '/update-progress', component: UpdateProgress },
   { path: '/', redirect: '/login' },
 ];
 

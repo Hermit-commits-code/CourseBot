@@ -19,4 +19,12 @@ export const getCourses = async () => {
   return await db.getAll('courses');
 };
 
-// Add more functions for editing, deleting, and querying courses
+export const updateCourseProgress = async (id, progress) => {
+  const db = await dbPromise;
+  const tx = db.transaction('courses', 'readwrite');
+  const store = tx.objectStore('courses');
+  const course = await store.get(id);
+  course.progress = progress;
+  await store.put(course);
+  await tx.done;
+};
