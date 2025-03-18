@@ -2,6 +2,7 @@
   <div>
     <h1>Dashboard</h1>
     <button @click="logout">Logout</button>
+    <router-link to="/add-course">Add Course</router-link>
     <!-- Add your dashboard content here -->
   </div>
 </template>
