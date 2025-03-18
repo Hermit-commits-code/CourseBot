@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.3](https://github.com/Hermit-commits-code/CourseBot/compare/v0.1.2...v0.1.3) (2025-03-18)
+
+
+### Features
+
+* **course:** add course management functionality ([e623b7e](https://github.com/Hermit-commits-code/CourseBot/commit/e623b7ecf635ab9528957a0b7f54691c0a99b755))
+
 ### [0.1.2](https://github.com/Hermit-commits-code/CourseBot/compare/v0.1.1...v0.1.2) (2025-03-18)
 
 
