@@ -20,3 +20,10 @@
 ### Removed
 
 - Removed cloud sync functionality as per user request.
+
+## [1.2.0] - 2025-03-18
+
+### Added
+
+- Started Phase 2: Design Mobile App UI.
+- Created a basic UI layout in Kivy with a Button and a Label.
