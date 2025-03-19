@@ -57,3 +57,12 @@ def add_course(name, platform, progress, start_date, completion_date, notes):
     """, (name, platform, progress, start_date, completion_date, notes))
     conn.commit()
     conn.close()
+
+def get_courses():
+    """Fetch all courses from the database."""
+    conn = sqlite3.connect("course_tracker.db")
+    cursor = conn.cursor()
+    cursor.execute("SELECT * FROM courses")
+    courses = cursor.fetchall()
+    conn.close()
+    return courses
