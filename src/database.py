@@ -46,3 +46,14 @@ def authenticate_user(username, password):
     user = cursor.fetchone()
     conn.close()
     return user is not None
+
+def add_course(name, platform, progress, start_date, completion_date, notes):
+    """Insert a new course into the database."""
+    conn = sqlite3.connect("course_tracker.db")
+    cursor = conn.cursor()
+    cursor.execute("""
+        INSERT INTO courses (name, platform, progress, start_date, completion_date, notes)
+        VALUES (?, ?, ?, ?, ?, ?)
+    """, (name, platform, progress, start_date, completion_date, notes))
+    conn.commit()
+    conn.close()
